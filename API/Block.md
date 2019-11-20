@@ -7,7 +7,7 @@
 &emsp;&emsp;<font color=Blue>[hc.Node](API/Node.md)</font>  
 ### <font color="#F17DA4">Methods</font>  
 ---
-<b>a</b>(name, value) → {Object}  
+#### <b>a</b>(name, value) → {Object}  
 获取或设置attr属性，仅有一个参数时相当于[getAttr](API/Data.md#getAttr)，有两个参数时相当于[setAttr](API/Data.md#setAttr)
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
@@ -43,8 +43,8 @@
 </div>
 
 Inherited From:
-*   [hc.Data#a](hc.Data.hcml#a)
-#### addChild(child, index)
+*   [hc.Data#a](API/Data.md#a)
+#### <b>addChild</b>(child, index)
 添加孩子节点，index为孩子插入索引，为空则插入作为最后的孩子，内部会自动调用child的setParent
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
@@ -61,7 +61,7 @@ Inherited From:
             <tr>  
                 <td style="color:#F17DA4">child</td>
                 <td>    
-                    <span style="color:#aaa">[hc.Data](hc.Data.hcml)</span>       
+                    <span style="color:#aaa">hc.Data</span>       
                 </td>      
                     <td>         
                     </td>
@@ -79,24 +79,42 @@ Inherited From:
     </table>
 </div>
 
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;Attributes&emsp;&emsp;Description  
-`child`&emsp;&emsp; [hc.Data](hc.Data.hcml)&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;孩子元素  
-`index`&emsp;&emsp;Number&emsp;\<optional>&emsp;插入索引
-#### Returns:
-
 Inherited From:
 
-*   [hc.Data#addChild](hc.Data.hcml#addChild)
+*   [hc.Data#addChild](API/Data.md#addChild)
 
-#### addStyleIcon(name, icon)
+#### <b>addStyleIcon</b>(name, icon)
 
 增加icon，icon参数请参考beginner guide
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">name</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>icon名</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">icon</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td><p>icon参数</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;Description  
-`name`&emsp; &emsp; String&emsp; &emsp;icon名  
-`icon`&emsp;&emsp; Object&emsp;&emsp;icon参数
 #### Returns:
 Inherited From:
 
@@ -134,15 +152,42 @@ Inherited From:
 #### eachChild(func, scope)
 
 遍历孩子元素
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;Attributes&emsp;&emsp;Description  
-`func`&emsp; &emsp; function&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;遍历函数  
-`scope`&emsp;&emsp;Object&emsp;\<optional>&emsp;&emsp;函数域  
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr style="color:#1F1F1F">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">func</td>
+                <td>    
+                    <span style="color:#aaa">function</span>       
+                </td>      
+                    <td>         
+                    </td>
+                <td style="color:#333"><p>遍历函数</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">scope</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>函数域</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 Inherited From:
 
-*   [hc.Data#eachChild](hc.Data.hcml#eachChild)
+*   [hc.Data#eachChild](API/Data.md#eachChild)
 
 #### Example
 ```
@@ -150,29 +195,96 @@ data.eachChild(function(child) {
     console.log(child.getId());
 });
 ```
-**firePropertyChange**(property, oldValue, newValue)
-
+#### <b>firePropertyChange</b>(property, oldValue, newValue)
 派发属性变化事件
-
-#### Parameters:
->Name &emsp;&emsp;&emsp; Type&emsp;&emsp;&emsp;Attributes&emsp;&emsp;&emsp;Description  
-`property`&emsp;&emsp;String&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;属性名  
-`oldValue`&emsp;&emsp;Object&emsp;&emsp;\<optional>&emsp;&emsp;&emsp;旧值  
-`newValue`&emsp;&emsp;bject&emsp; &emsp; \<optional>&emsp;&emsp;&emsp;新值  
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr style="color:#1F1F1F">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">property</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                    <td>         
+                    </td>
+                <td style="color:#333"><p>属性名</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">oldValue</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>旧值</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">newValue</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>新值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 Inherited From:
 
-*   [hc.Data#firePropertyChange](hc.Data.hcml#firePropertyChange)
+*   [hc.Data#firePropertyChange](API/Data.md#firePropertyChange)
 
-**fp**(property, oldValue, newValue)
+#### <b>fp</b>(property, oldValue, newValue)
 
-派发属性变化事件，同[firePropertyChange](hc.Data.hcml#firePropertyChange)
-
-#### Parameters:
->Name &emsp;&emsp;&emsp; Type&emsp;&emsp;&emsp;Attributes&emsp;&emsp;&emsp;Description  
-`property`&emsp;&emsp;String&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;属性名  
-`oldValue`&emsp;&emsp;Object&emsp;&emsp;\<optional>&emsp;&emsp;&emsp;旧值  
-`newValue`&emsp;&emsp;bject&emsp; &emsp; \<optional>&emsp;&emsp;&emsp;新值  
+派发属性变化事件，同[firePropertyChange](API/Data.md#firePropertyChange)
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr style="color:#1F1F1F">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">property</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                    <td>         
+                    </td>
+                <td style="color:#333"><p>属性名</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">oldValue</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>旧值</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">newValue</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>新值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 
 Inherited From:
 
@@ -184,11 +296,11 @@ Inherited From:
 
 #### Returns:
 
-[hc.List](hc.List.hcml)
+[hc.List](API/List.md)
 
 Inherited From:
 
-*   [hc.Node#getAgentEdges](hc.Node.hcml#getAgentEdges)
+*   [hc.Node#getAgentEdges](API/Node.md#getAgentEdges)
 
 #### getAttaches() → {[hc.List](hc.List.hcml)}
 
@@ -196,7 +308,7 @@ Inherited From:
 
 #### Returns:
 
-[hc.List](hc.List.hcml)
+[hc.List](API/List.md)
 
 Inherited From:
 
@@ -205,18 +317,34 @@ Inherited From:
 #### getAttr(name) → {Object}
 
 获取attr属性
-
-#### Parameters:
->Name &emsp;&emsp;&emsp; Type&emsp;&emsp;&emsp;Description  
-`property`&emsp;&emsp;String&emsp;&emsp;属性名  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">property</td>
+                <td>    
+                    <span style="color:#aaa">Type</span>       
+                </td>      
+                <td><p>属性名</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
 Object
 
 Inherited From:
 
-*   [hc.Data#getAttr](hc.Data.hcml#getAttr)
+*   [hc.Data#getAttr](API/Data.md#getAttr)
 
 #### getAttrObject() → {Object}
 
@@ -228,23 +356,39 @@ Object - attr属性对象
 
 Inherited From:
 
-*   [hc.Data#getAttrObject](hc.Data.hcml#getAttrObject)
+*   [hc.Data#getAttrObject](API/Data.md#getAttrObject)
 
 #### getChildAt(index) → {[hc.Data](hc.Data.hcml)}
 
 返回指定索引位置的孩子
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;Description  
-`index`&emsp;Number&emsp;索引  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">index</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>索引</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
-[hc.Data](hc.Data.hcml) - 索引对应的孩子
+[hc.Data](API/Data.md) - 索引对应的孩子
 
 Inherited From:
 
-*   [hc.Data#getChildAt](hc.Data.hcml#getChildAt)
+*   [hc.Data#getChildAt](API/Data.md#getChildAt)
 
 #### getChildren() → {[hc.List](hc.List.hcml)}
 
@@ -252,11 +396,11 @@ Inherited From:
 
 ##### Returns:
 
-[hc.List](hc.List.hcml) - 孩子元素集合
+[hc.List](API/List.md) - 孩子元素集合
 
 Inherited From:
 
-*   [hc.Data#getChildren](hc.Data.hcml#getChildren)
+*   [hc.Data#getChildren](PAI/Data.md#getChildren)
 
 #### getClass() → {function}
 
@@ -268,7 +412,7 @@ function - 类声明(构造函数)
 
 Inherited From:
 
-*   [hc.Data#getClass](hc.Data.hcml#getClass)
+*   [hc.Data#getClass](API/Data.md#getClass)
 
 #### getClassName() → {String}
 
@@ -280,21 +424,43 @@ String - 类全名
 
 Inherited From:
 
-*   [hc.Data#getClassName](hc.Data.hcml#getClassName)
+*   [hc.Data#getClassName](API/Data.md#getClassName)
 
 See:
 
-*   [hc.Data#getSuperClass](hc.Data.hcml#getSuperClass)
+*   [hc.Data#getSuperClass](API/Data.md#getSuperClass)
 
 #### getCorners(xPadding, yPadding) → {Array}
 
 获取图元四个角的实时坐标(包括旋转后的坐标)
-
-#### Parameters:
->Name &emsp;&emsp;&emsp; Type&emsp;&emsp;&emsp;&emsp;Description  
-`xPadding`&emsp;&emsp;Number&emsp;&emsp;水平方向padding  
-`yPadding`&emsp;&emsp;Number&emsp;&emsp;垂直方向padding  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">xPadding</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>水平方向padding</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">yPadding</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>垂直方向padding</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
 Array - 四个角坐标，顺序为左上，右上，右下，左下
@@ -313,17 +479,17 @@ Inherited From:
     {x: 0, y: 100}//左下
     ]
 
-#### getDataModel() → {[hc.DataModel](hc.DataModel.hcml)}
+#### getDataModel() → {[hc.DataModel](API/DataModel.md)}
 
 获取所属的DataModel
 
 #### Returns:
 
-[hc.DataModel](hc.DataModel.hcml) - DataModel数据容器
+[hc.DataModel](API/DataModel.md) - DataModel数据容器
 
 Inherited From:
 
-*   [hc.Data#getDataModel](hc.Data.hcml#getDataModel)
+*   [hc.Data#getDataModel](API/Data.md#getDataModel)
 
 #### getDisplayName() → {String}
 
@@ -335,7 +501,7 @@ String - 显示名称
 
 Inherited From:
 
-*   [hc.Data#getDisplayName](hc.Data.hcml#getDisplayName)
+*   [hc.Data#getDisplayName](API/Data.md#getDisplayName)
 
 #### getEdges() → {[hc.List](hc.List.hcml)}
 
@@ -798,11 +964,27 @@ Inherited From:
 #### getStyle(name) → {Object}
 
 获取样式属性
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;Description  
-`name`&emsp; &emsp; String&emsp;&emsp;样式名  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">name</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>样式名</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
 Object
@@ -934,11 +1116,27 @@ Inherited From:
 #### handleHostPropertyChange(event)
 
 当吸附宿主对象属性发生变化时回调该函数，可重载做后续处理
-
-##### Parameters:
->Name &emsp;Type&emsp;Description  
-`event`&emsp; Event&emsp;事件对象  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">event</td>
+                <td>    
+                    <span style="color:#aaa">Event</span>       
+                </td>      
+                <td><p>事件对象</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 Inherited From:
 
 *   [hc.Node#handleHostPropertyChange](hc.Node.hcml#handleHostPropertyChange)
@@ -998,12 +1196,27 @@ Boolean
 #### isDescendantOf(data) → {Boolean}
 
 判断自身是否为指定data的子孙
-
-#### Parameters:
->Name &emsp;Type&emsp;Description  
-`data`&emsp; [hc.Data](hc.Data.hcml)&emsp;要对比的数据元素 
-
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">data</td>
+                <td>    
+                    <span style="color:#aaa">hc.Data</span>       
+                </td>      
+                <td><p>要对比的数据元素</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 ##### Returns:
 
 Boolean - 自身是否为指定data的子孙
@@ -1027,11 +1240,27 @@ Inherited From:
 #### isHostOn(node) → {Boolean}
 
 判断当前图元是否吸附到指定图元对象上
-
-##### Parameters:
->Name &emsp;Type&emsp;Description  
-`node`&emsp; [hc.Node](hc.Node.hcml)&emsp;指定的图元 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">node</td>
+                <td>    
+                    <span style="color:#aaa">hc.Node</span>       
+                </td>      
+                <td><p>指定的图元</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 #### Returns:
 
 Boolean
@@ -1043,11 +1272,27 @@ Inherited From:
 #### isParentOf(data) → {Boolean}
 
 判断自身是否为指定data的父亲
-
-##### Parameters:
->Name &emsp;Type&emsp;Description  
-`data`&emsp; [hc.Data](hc.Data.hcml)&emsp;要对比的数据元素 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">data</td>
+                <td>    
+                    <span style="color:#aaa">hc.Data</span>       
+                </td>      
+                <td><p>要对比的数据元素</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 #### Returns:
 
 Boolean - 自身是否为指定data的父亲
@@ -1059,11 +1304,27 @@ Inherited From:
 #### isRelatedTo(data) → {Boolean}
 
 判断自身与指定data是否有父子或子孙关系
-
-#### Parameters:
->Name &emsp;Type&emsp;Description  
-`data`&emsp; [hc.Data](hc.Data.hcml)&emsp;要对比的数据元素 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">data</td>
+                <td>    
+                    <span style="color:#aaa">hc.Data</span>       
+                </td>      
+                <td><p>要对比的数据元素</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 #### Returns:
 
 Boolean - 自身与指定data是否有父子或子孙关系
@@ -1091,12 +1352,34 @@ Inherited From:
 #### onChildAdded(child, index)
 
 添加孩子时的回调函数，可重载做后续处理
-
-##### Parameters:
->Name &emsp;Type&emsp;Description  
-`child`&emsp; [hc.Data](hc.Data.hcml)&emsp;新增加的孩子元素  
-`index`&emsp; Number&emsp;索引 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">child</td>
+                <td>    
+                    <span style="color:#aaa">hc.Data</span>       
+                </td>      
+                <td><p>新增加的孩子元素</p></td>
+            </tr>
+             <tr>  
+                <td style="color:#F17DA4">index</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>索引</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 Inherited From:
 
 *   [hc.Data#onChildAdded](hc.Data.hcml#onChildAdded)
@@ -1104,12 +1387,34 @@ Inherited From:
 #### onChildRemoved(child, index)
 
 删除孩子时的回调函数，可重载做后续处理
-
-#### Parameters:
->Name &emsp;Type&emsp;Description  
-`child`&emsp; [hc.Data](hc.Data.hcml)&emsp;被删除的孩子元素  
-`index`&emsp; Number&emsp;索引 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">child</td>
+                <td>    
+                    <span style="color:#aaa">hc.Data</span>       
+                </td>      
+                <td><p>被删除的孩子元素</p></td>
+            </tr>
+             <tr>  
+                <td style="color:#F17DA4">index</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>索引</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 Inherited From:
 
 *   [hc.Data#onChildRemoved](hc.Data.hcml#onChildRemoved)
@@ -1117,12 +1422,34 @@ Inherited From:
 #### onHostChanged(oldHost, newHost)
 
 当吸附的宿主对象发生变化时回调该函数，可重载做后续处理
-
-#### Parameters:
->Name &emsp;Type&emsp;Description  
-`oldHost`&emsp; [hc.Node](hc.Node.hcml)&emsp;旧的宿主  
-`newHost`&emsp; [hc.Node](hc.Node.hcml)&emsp;新的宿主 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">oldHost</td>
+                <td>    
+                    <span style="color:#aaa">hc.Node</span>       
+                </td>      
+                <td><p>旧的宿主</p></td>
+            </tr>
+             <tr>  
+                <td style="color:#F17DA4">newHost</td>
+                <td>    
+                    <span style="color:#aaa">hc.Node</span>       
+                </td>      
+                <td><p>新的宿主</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 Inherited From:
 
 *   [hc.Node#onHostChanged](hc.Node.hcml#onHostChanged)
@@ -1130,12 +1457,34 @@ Inherited From:
 #### onParentChanged(oldParent, parent)
 
 改变父亲元素时的回调函数，可重载做后续处理
-
-#### Parameters:
->Name &emsp;Type&emsp;Description  
-`oldParent`&emsp; [hc.Data](hc.Data.hcml)&emsp;旧的父元素  
-`parent`&emsp; [hc.Data](hc.Data.hcml)&emsp;新的父元素 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">oldParent</td>
+                <td>    
+                    <span style="color:#aaa">hc.Data</span>       
+                </td>      
+                <td><p>旧的父元素</p></td>
+            </tr>
+             <tr>  
+                <td style="color:#F17DA4">parent</td>
+                <td>    
+                    <span style="color:#aaa">hc.Data</span>       
+                </td>      
+                <td><p>新的父元素</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 Inherited From:
 
 *   [hc.Data#onParentChanged](hc.Data.hcml#onParentChanged)
@@ -1143,11 +1492,27 @@ Inherited From:
 #### onPropertyChanged(event)
 
 属性变化回调函数，可重载做后续处理
-
-#### Parameters:
->Name &emsp;Type&emsp;Description  
-`event`&emsp; Object&emsp;属性变化事件  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">event</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td><p>属性变化事件</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 Inherited From:
 
 *   [hc.Data#onPropertyChanged](hc.Data.hcml#onPropertyChanged)
@@ -1165,13 +1530,41 @@ Inherited From:
 #### onStyleChanged(name, oldValue, newValue)
 
 样式属性变化时会回调该函数，可重载做后续处理
-
-#### Parameters:
->Name &emsp;Type&emsp;Description  
-`name`&emsp; String&emsp;样式名  
-`oldValue`&emsp; Object&emsp;旧的样式值  
-`newValue`&emsp; Object&emsp;新的样式值 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">name</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>样式名</p></td>
+            </tr>
+             <tr>  
+                <td style="color:#F17DA4">oldValue</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td><p>旧的样式值</p></td>
+            </tr>
+             <tr>  
+                <td style="color:#F17DA4">newValue</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td><p>新的样式值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
 Inherited From:
 
 *   [hc.Data#onStyleChanged](hc.Data.hcml#onStyleChanged)
@@ -1179,13 +1572,37 @@ Inherited From:
 #### p(x, y) → {Object}
 
 获取或设置设置图元中心点坐标，有参数时相当于[setPosition](hc.Node.hcml#setPosition)，没有参数时相当于[getPosition](hc.Node.hcml#getPosition)
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;Attributes&emsp;&emsp;&emsp;&emsp;Description  
-`x`&emsp;&emsp;&emsp;Number | Obejct&emsp;\<optional>&emsp;&emsp;&emsp; 单个参数时，为 {x ,y} 对象，两个参数时为 x 坐标  
-&emsp;&emsp;&emsp;&emsp;&emsp;ct  
-`y`&emsp;&emsp;&emsp;Number&emsp;\<optional>&emsp;&emsp;&emsp; y 坐标  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr style="color:#1F1F1F">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number | Obejct</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>单个参数时，为 {x ,y} 对象，两个参数时为 x 坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>y坐标</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
 Object - 坐标值，格式为:{x: x, y: y}
@@ -1202,13 +1619,45 @@ See:
 #### p3(x, y, z) → {Array}
 
 获取或设置图元中心点在3D拓扑中的三维坐标，有三个参数时相当于[setPosition3d](hc.Node.hcml#setPosition3d)，没有参数时相当于[getPosition3d](hc.Node.hcml#getPosition3d)
-
-#### Parameters:
->Name &emsp;Type&emsp;Attributes&emsp;Description  
-`x`&emsp; Number&emsp;\<optional>&emsp;x坐标  
-`y`&emsp; Number&emsp;\<optional>&emsp;y坐标  
-`z`&emsp; Number&emsp;\<optional>&emsp;z坐标  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr style="color:#1F1F1F">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>x坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>y坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">z</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>z坐标</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
 Array - 三维坐标数组，格式为\[x, y, z\]
@@ -1225,13 +1674,45 @@ See:
 #### r3(rotationX, rotationY, rotationZ) → {Array}
 
 获取或设置图元在3D拓扑中的三维旋转角度，有三个参数时相当于[setRotation3d](hc.Node.hcml#setRotation3d)，没有参数时相当于[getRotation3d](hc.Node.hcml#getRotation3d)
-
-#### Parameters:
->Name &emsp;Type&emsp;Attributes&emsp;Description  
-`rotationX`&emsp; Number&emsp;\<optional>&emsp;沿x轴的旋转角度(弧度制)  
-`rotationY`&emsp; Number&emsp;\<optional>&emsp;沿y轴的旋转角度(弧度制)  
-`rotationZ`&emsp; Number&emsp;\<optional>&emsp;沿z轴的旋转角度(弧度制)  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr style="color:#1F1F1F">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">rotationX</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>沿x轴的旋转角度(弧度制)</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">rotationY</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>沿y轴的旋转角度(弧度制)</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">rotationZ</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>沿z轴的旋转角度(弧度制)</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
 Array - 三维旋转角度(弧度制)，格式为\[x, y, z\]，即\[getRotationX(), -getRotation(), getRotationZ()\]
@@ -1260,11 +1741,27 @@ Inherited From:
 #### removeStyleIcon(name)
 
 删除icon
-
-##### Parameters:
->Name &emsp;Type&emsp;Description  
-`name`&emsp; String&emsp;要删除的icon名    
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">name</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>要删除的icon名</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#removeStyleIcon](hc.Data.hcml#removeStyleIcon)
@@ -1272,13 +1769,41 @@ Inherited From:
 #### rotateAt(x, y, angle)
 
 以指定的坐标为中心旋转图元
-
-#### Parameters:
->Name &emsp;Number&emsp;Description  
-`x`&emsp;&emsp;&emsp; Number&emsp;指定x坐标   
-`y`&emsp;&emsp;&emsp; Number&emsp;指定y坐标   
-`angle`&emsp; Number&emsp;旋转角度(弧度制)   
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>指定x坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>指定y坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">angle</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>旋转角度(弧度制)</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#rotateAt](hc.Node.hcml#rotateAt)
@@ -1286,12 +1811,38 @@ Inherited From:
 #### s(name, value) → {Object}
 
 获取或设置样式，仅有一个参数时相当于[getStyle](hc.Data.hcml#getStyle)，有两个参数时相当于[setStyle](hc.Data.hcml#setStyle)
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;Attributes&emsp;Description  
-`name`&emsp;&emsp;&emsp;String&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;样式名   
-`value`&emsp;&emsp; Object&emsp;\<optional>&emsp;样式值
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr style="color:#1F1F1F">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">name</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                    <td>         
+                    </td>
+                <td style="color:#333"><p>样式名</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">value</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>样式值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
 Object
@@ -1303,13 +1854,41 @@ Inherited From:
 #### s3(width, tall, heighc) → {Array}
 
 获取或设置图元在3D拓扑中的尺寸，有三个参数时相当于[setSize3d](hc.Node.hcml#setSize3d)，没有参数时相当于[getSize3d](hc.Node.hcml#getSize3d)
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp; &emsp;Description  
-`width`&emsp;&emsp; Number&emsp;&emsp;x轴方向的长度   
-`tall`&emsp;&emsp;&emsp;Number&emsp;&emsp;y轴方向的长度  
-`heighc`&emsp;&emsp;Number&emsp;&emsp;z轴方向的长度
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">width</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>x轴方向的长度</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">tall</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的长度</p></td>
+            </tr>
+             <tr>  
+                <td style="color:#F17DA4">heighc</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>z轴方向的长度</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
 Array - 格式为\[x, y, z\]，即\[getWidth(), getTall(), getHeighc()\]  
@@ -1326,11 +1905,27 @@ See:
 #### setAdjustChildrenToTop(adjustToTop)
 
 GraphView点击图元会自动sendToTop，该属性决定是否对子图元也进行sendToTop操作
-
-##### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`adjustToTop`&emsp;Boolean&emsp; 是否将children自动sendToTop   
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">adjustToTop</td>
+                <td>    
+                    <span style="color:#aaa">Boolean</span>       
+                </td>      
+                <td><p>是否将children自动sendToTop</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setAdjustChildrenToTop](hc.Data.hcml#setAdjustChildrenToTop)
@@ -1338,12 +1933,34 @@ Inherited From:
 #### setAnchor(x, y)
 
 设置图元中心点
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description  
-`x`&emsp;&emsp;&emsp; Number | Object&emsp;x轴方向的中心点比例，当仅有一个参数时，可为 {x: 0, y: 0} 的对象格式   
-`y`&emsp;&emsp;&emsp; Number&emsp;&emsp;&emsp;&emsp;&emsp;y轴方向的中心点比例   
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number | Object</span>       
+                </td>      
+                <td><p>x轴方向的中心点比例，当仅有一个参数时，可为 {x: 0, y: 0} 的对象格式</p></td>
+            </tr>
+             <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的中心点比例</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>  
 Inherited From:
 
 *   [hc.Node#setAnchor](hc.Node.hcml#setAnchor)
@@ -1351,13 +1968,41 @@ Inherited From:
 #### setAnchor3d(x, y, z)
 
 设置图元在3D坐标系中的中心点
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description  
-`x`&emsp;&emsp;&emsp; Number | Array&emsp;x轴方向的中心点比例，当仅有一个参数时，可为 \[x, y, z\] 的数组格式  
-`y`&emsp;&emsp;&emsp; Number&emsp;&emsp;&emsp;&emsp;&emsp;y轴方向的中心点比例  
-`z`&emsp;&emsp;&emsp; Number&emsp;&emsp;&emsp;&emsp;&emsp;z轴方向的中心点比例  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number | Array</span>       
+                </td>      
+                <td><p>x轴方向的中心点比例，当仅有一个参数时，可为 \[x, y, z\] 的数组格式</p></td>
+            </tr>
+             <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的中心点比例</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">z</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>z轴方向的中心点比例</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>  
 Inherited From:
 
 *   [hc.Node#setAnchor3d](hc.Node.hcml#setAnchor3d)
@@ -1365,11 +2010,27 @@ Inherited From:
 #### setAnchorElevation(y)
 
 设置图元在3D坐标系中的y轴方向的中心点比例
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description  
-`y`&emsp;&emsp;&emsp; Number&emsp;&emsp;&emsp;&emsp;&emsp;y轴方向的中心点比例  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的中心点比例</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setAnchorElevation](hc.Node.hcml#setAnchorElevation)
@@ -1377,12 +2038,27 @@ Inherited From:
 #### setAnchorX(x)
 
 设置图元x轴方向的中心点比例
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description  
-`x`&emsp;&emsp;&emsp; Number&emsp;&emsp;&emsp;&emsp;&emsp;x轴方向的中心点比例  
-
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>x轴方向的中心点比例</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setAnchorX](hc.Node.hcml#setAnchorX)
@@ -1390,11 +2066,27 @@ Inherited From:
 #### setAnchorY(y)
 
 设置图元y轴方向的中心点比例
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description  
-`y`&emsp;&emsp;&emsp; Number&emsp;&emsp;&emsp;&emsp;&emsp;y轴方向的中心点比例  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的中心点比例</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setAnchorY](hc.Node.hcml#setAnchorY)
@@ -1402,12 +2094,34 @@ Inherited From:
 #### setAttr(name, value)
 
 设置attr属性
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;Description  
-`name`&emsp; &emsp; String&emsp;&emsp;属性名  
-`value`&emsp;&emsp;Object&emsp;&emsp;属性值 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">name</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>属性名</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">value</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td><p>属性值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setAttr](hc.Data.hcml#setAttr)
@@ -1415,11 +2129,27 @@ Inherited From:
 #### setAttrObject(attrObject)
 
 设置attr属性对象，该属性默认为空，用于存储用户业务信息
-
-#### Parameters:
->Name &emsp;&emsp;&emsp; Type&emsp;&emsp;Description  
-`attrObject`&emsp;Object&emsp;attr属性对象  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">attrObject</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td><p>attr属性对象</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setAttrObject](hc.Data.hcml#setAttrObject)
@@ -1427,19 +2157,51 @@ Inherited From:
 #### setClickThroughEnabled(clickThroughEnabled)
 
 设置块节点是否可以点击穿透（选中 block 前提下，再次点击可以选中子节点）
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;&emsp;Description  
-`clickThroughEnabled`&emsp;Boolean 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">clickThroughEnabled</td>
+                <td>    
+                    <span style="color:#aaa">Boolean</span>       
+                </td>      
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### setDisplayName(displayName)
 
 设置显示名称，常作为Column和Property的列头和属性名称显示
-
-##### Parameters:
->Name &emsp;&emsp;&emsp; Type&emsp;&emsp;Description  
-`displayName`&emsp;String&emsp;显示名称  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">displayName</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>显示名称</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setDisplayName](hc.Data.hcml#setDisplayName)
@@ -1447,11 +2209,27 @@ Inherited From:
 #### setElevation(elevation)
 
 设置图元中心在3D坐标系中的y坐标
-
-#### Parameters:
->Name &emsp;&emsp;&emsp; Type&emsp;&emsp;Description  
-`elevation`&emsp;Number&emsp;y轴方向的坐标值  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">elevation</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的坐标值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setElevation](hc.Node.hcml#setElevation)
@@ -1459,13 +2237,27 @@ Inherited From:
 #### setHeighc(heighc)
 
 设置图元在2D拓扑中的高度，或3D拓扑中的z轴长度
-
-#### Parameters:
->Name &emsp;&emsp;&emsp; Type&emsp; &emsp; Description  
-`heighc`&emsp;&emsp;&emsp;Number&emsp;2D拓扑中的高度，或3D拓扑中的z轴
-
-2D拓扑中的高度，或3D拓扑中的z轴长度
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">heighc</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>2D拓扑中的高度，或3D拓扑中的z轴</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setHeighc](hc.Node.hcml#setHeighc)
@@ -1473,11 +2265,27 @@ Inherited From:
 #### setHost(data)
 
 设置宿主图元，当图元吸附上宿主图元时，宿主移动或旋转时会带动所有吸附者
-
-#### Parameters:
->Name &emsp;&emsp;&emsp; Type&emsp;&emsp;&emsp;Description  
-`data`&emsp;&emsp;&emsp;&emsp;[hc.Data](hc.Data.hcml)&emsp;&emsp;宿主图元
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">data</td>
+                <td>    
+                    <span style="color:#aaa">hc.Data</span>       
+                </td>      
+                <td><p>宿主图元</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setHost](hc.Node.hcml#setHost)
@@ -1485,11 +2293,27 @@ Inherited From:
 #### setIcon(icon)
 
 设置小图标名称，常作为TreeView和ListView等组件上的节点小图标
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;&emsp;&emsp; &emsp;Description  
-`icon`&emsp;&emsp;&emsp;String | Object&emsp;图标名或矢量
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">icon</td>
+                <td>    
+                    <span style="color:#aaa">String | Object</span>       
+                </td>      
+                <td><p>图标名或矢量</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setIcon](hc.Data.hcml#setIcon)
@@ -1497,11 +2321,27 @@ Inherited From:
 #### setId(id)
 
 设置唯一编号，如果手工设置，一定要确保在data加入到DataModel之前设置并且唯一不重复
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;Description  
-`id`&emsp;&emsp;&emsp;String | Number&emsp;唯一编号  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">id</td>
+                <td>    
+                    <span style="color:#aaa">String | Number</span>       
+                </td>      
+                <td><p>唯一编号</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setId](hc.Data.hcml#setId)
@@ -1509,11 +2349,27 @@ Inherited From:
 #### setImage(image)
 
 设置拓扑上展现的图片信息，在GraphView拓扑图中图片一般以position为中心绘制
-
-#### Parameters:
->Name &emsp; &emsp; Type&emsp;&emsp;&emsp;&emsp;&emsp; Description  
-`image`&emsp;&emsp;&emsp;String | Object&emsp;注册的图片名或url或矢量对象 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">image</td>
+                <td>    
+                    <span style="color:#aaa">String | Object</span>       
+                </td>      
+                <td><p>注册的图片名或url或矢量对象</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setImage](hc.Node.hcml#setImage)
@@ -1521,12 +2377,27 @@ Inherited From:
 #### setLayer(layer)
 
 设置数据元素在GraphView组件中的图层位置
-
-#### Parameters:
->Name &emsp; &emsp; Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description  
-`layer`&emsp;&emsp;&emsp;String | Number&emsp;图层名 
-
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">layer</td>
+                <td>    
+                    <span style="color:#aaa">String | Number</span>       
+                </td>      
+                <td><p>图层名</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setLayer](hc.Data.hcml#setLayer)
@@ -1534,11 +2405,27 @@ Inherited From:
 #### setName(name)
 
 设置数据元素名称
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;Description  
-`name`&emsp;&emsp;&emsp;String&emsp;数据元素名称 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">name</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>数据元素名称</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setName](hc.Data.hcml#setName)
@@ -1546,11 +2433,27 @@ Inherited From:
 #### setParent(parent)
 
 设置父元素
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;Type&emsp; &emsp; &emsp;Description  
-`parent`&emsp;&emsp;&emsp;[hc.Data](hc.Data.hcml)&emsp;&emsp;父元素 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">parent</td>
+                <td>    
+                    <span style="color:#aaa">hc.Data</span>       
+                </td>      
+                <td><p>父元素</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setParent](hc.Data.hcml#setParent)
@@ -1558,12 +2461,34 @@ Inherited From:
 #### setPosition(x, y)
 
 设置图元中心点坐标
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`x`&emsp;&emsp;&emsp;&emsp; Number&emsp;&emsp;x坐标  
-`y`&emsp;&emsp;&emsp;&emsp; Number&emsp;&emsp;y坐标 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>x坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y坐标</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setPosition](hc.Node.hcml#setPosition)
@@ -1571,13 +2496,41 @@ Inherited From:
 #### setPosition3d(x, y, z)
 
 设置图元中心点在3D拓扑中的三维坐标
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;Description  
-`x`&emsp;&emsp;&emsp; Number&emsp;x坐标  
-`y`&emsp;&emsp;&emsp; Number&emsp;y坐标   
-`z`&emsp;&emsp;&emsp; Number&emsp;z坐标 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>x坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">z</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>z坐标</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setPosition3d](hc.Node.hcml#setPosition3d)
@@ -1585,14 +2538,48 @@ Inherited From:
 #### setRect(x, y, width, heighc)
 
 设置图元矩形区域
-
-#### Parameters:
->Name &emsp; &emsp; Type&emsp;&emsp;&emsp; Description  
-`x`&emsp;&emsp;&emsp;&emsp;&emsp;Number&emsp;&emsp;x坐标  
-`y`&emsp;&emsp;&emsp;&emsp;&emsp;Number&emsp;&emsp;y坐标   
-`width`&emsp;&emsp;&emsp;Number&emsp;&emsp;宽度  
-`heighc`&emsp; &emsp; Number&emsp;&emsp;高度 
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>x坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y坐标</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">width</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>宽度</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">heighc</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>高度</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setRect](hc.Node.hcml#setRect)
@@ -1600,12 +2587,27 @@ Inherited From:
 #### setRotation(rotation)
 
 设置图元的旋转角度，围绕中心点顺时针旋转
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp; Type&emsp;&emsp;&emsp;Description  
-`rotation`&emsp;&emsp;&emsp;Number&emsp; 旋转角度(弧度制)  
-
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">rotation</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>旋转角度(弧度制)</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setRotation](hc.Node.hcml#setRotation)
@@ -1613,13 +2615,41 @@ Inherited From:
 #### setRotation3d(x, y, z)
 
 设置图元在3D拓扑中的三维旋转角度
-
-#### Parameters:
->Name &emsp;&emsp; &emsp;Type&emsp;&emsp;&emsp;Description  
-`rotation`&emsp;&emsp;Number&emsp;沿x轴的旋转角度(弧度制)  
-`y`&emsp;&emsp;&emsp;&emsp; &emsp; Number&emsp; 沿y轴的旋转角度(弧度制)   
-`z`&emsp;&emsp;&emsp;&emsp; &emsp; Number&emsp; 沿z轴的旋转角度(弧度制)  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">rotationX</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>沿x轴的旋转角度(弧度制)</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">rotationY</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>沿y轴的旋转角度(弧度制)</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">rotationZ</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>沿z轴的旋转角度(弧度制)</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setRotation3d](hc.Node.hcml#setRotation3d)
@@ -1629,16 +2659,32 @@ Inherited From:
 设置三维旋转模式  
   
 图元在3D拓扑中旋转时，先沿x轴旋转，再沿y轴旋转和先沿y轴旋转，再沿x轴旋转最后的结果是不一样的
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Type&emsp;Description  
-`rotationMode`&emsp;&emsp; String&emsp;旋转模式，可选值如下：   
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*   xyz:先进行x轴旋转，再进行y轴旋转，最后进行z轴旋转
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*   yxz:先进行y轴旋转，再进行x轴旋转，最后进行z轴旋转
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*   yzx:先进行y轴旋转，再进行z轴旋转，最后进行x轴旋转
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*   zxy:先进行z轴旋转，再进行x轴旋转，最后进行y轴旋转
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*   zyx:先进行z轴旋转，再进行y轴旋转，最后进行x轴旋转
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">rotationMode</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>旋转模式，可选值如下：</p></td>
+            </tr>
+            <tr>  
+                <td></td>
+                <td></td>      
+                <td><p>xyz:先进行x轴旋转，再进行y轴旋转，最后进行z轴旋转<br>yxz:先进行y轴旋转，再进行x轴旋转，最后进行z轴旋转<br>yzx:先进行y轴旋转，再进行z轴旋转，最后进行x轴旋转<br>zxy:先进行z轴旋转，再进行x轴旋转，最后进行y轴旋转<br>zyx:先进行z轴旋转，再进行y轴旋转，最后进行x轴旋转</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setRotationMode](hc.Node.hcml#setRotationMode)
@@ -1650,11 +2696,27 @@ See:
 #### setRotationX(rotationX)
 
 设置图元在3D拓扑中沿x轴的旋转角度(弧度制)
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;&emsp;Type &emsp;&emsp;Description  
-`rotationX`&emsp;&emsp;&emsp;Number&emsp;旋转角度(弧度制)  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">rotationX</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>旋转角度(弧度制)</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setRotationX](hc.Node.hcml#setRotationX)
@@ -1662,11 +2724,27 @@ Inherited From:
 #### setRotationY(rotationY)
 
 设置图元在3D拓扑中沿y轴的旋转角度(弧度制)
-
-##### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;&emsp;Type&emsp; &emsp;Description  
-`rotationY`&emsp;&emsp;&emsp;Number&emsp;旋转角度(弧度制)  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">rotationY</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>旋转角度(弧度制)</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setRotationY](hc.Node.hcml#setRotationY)
@@ -1674,11 +2752,27 @@ Inherited From:
 #### setRotationZ(rotationZ)
 
 设置图元在3D拓扑中沿z轴的旋转角度(弧度制)
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;&emsp;Type&emsp; &emsp;Description  
-`rotationZ`&emsp;&emsp;&emsp;Number&emsp;旋转角度(弧度制)  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">rotationZ</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>旋转角度(弧度制)</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setRotationZ](hc.Node.hcml#setRotationZ)
@@ -1686,12 +2780,34 @@ Inherited From:
 #### setScale(x, y)
 
 设置图元在2D拓扑中的缩放值
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description  
-`x`&emsp;&emsp;&emsp; Number | Object&emsp;x轴方向缩放值,当仅有一个参数时，可传入{x, y}格式的对象   
-`y`&emsp;&emsp;&emsp; Number&emsp;&emsp;&emsp;&emsp;&emsp;y轴方向缩放值  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number | Object</span>       
+                </td>      
+                <td><p>x轴方向缩放值,当仅有一个参数时，可传入{x, y}格式的对象</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向缩放值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setScale](hc.Node.hcml#setScale)
@@ -1699,13 +2815,41 @@ Inherited From:
 #### setScale3d(x, y, z)
 
 设置图元在3D拓扑中的缩放值
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description  
-`x`&emsp;&emsp;&emsp;Number | Array &emsp; x轴方向缩放值,当仅有一个参数时，可传入{x, y}格式的对象   
-`y`&emsp;&emsp;&emsp;Number&emsp;&emsp;&emsp;&emsp;&emsp;y轴方向缩放值  
-`z`&emsp;&emsp;&emsp;Number&emsp;&emsp;&emsp;&emsp;&emsp;z轴方向缩放值   
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number | Array</span>       
+                </td>      
+                <td><p>x轴方向缩放值,当仅有一个参数时，可传入[x, y]格式的对象</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向缩放值</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">z</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>z轴方向缩放值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setScale3d](hc.Node.hcml#setScale3d)
@@ -1713,11 +2857,27 @@ Inherited From:
 #### setScaleTall(y)
 
 设置图元在3D拓扑中y轴方向的缩放值
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;Description   
-`y`&emsp;&emsp;&emsp;Number&emsp;&emsp;&emsp;&emsp;y轴方向缩放值  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向缩放值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setScaleTall](hc.Node.hcml#setScaleTall)
@@ -1725,12 +2885,27 @@ Inherited From:
 #### setScaleX(x)
 
 设置图元在2D拓扑中x轴方向的缩放值
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;Description  
-`x`&emsp;&emsp;&emsp;Number&emsp;x轴方向缩放值   
-
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">x</td>
+                <td>    
+                    <span style="color:#aaa">Number | Array</span>       
+                </td>      
+                <td><p>x轴方向缩放值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setScaleX](hc.Node.hcml#setScaleX)
@@ -1738,11 +2913,27 @@ Inherited From:
 #### setScaleY(y)
 
 设置图元在2D拓扑中y轴方向的缩放值
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;Description  
-`y`&emsp;&emsp;&emsp;Number&emsp;y轴方向缩放值  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">y</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向缩放值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setScaleY](hc.Node.hcml#setScaleY)
@@ -1750,12 +2941,34 @@ Inherited From:
 #### setSize(width, heighc)
 
 设置图元在2D拓扑中的尺寸(宽高)
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`width`&emsp;&emsp; Number&emsp;&emsp;宽度  
-`heighc`&emsp;&emsp;Number&emsp;&emsp;高度    
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">width</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>宽度</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">heighc</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>高度</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setSize](hc.Node.hcml#setSize)
@@ -1763,13 +2976,41 @@ Inherited From:
 #### setSize3d(width, tall, heighc)
 
 设置图元在3D拓扑中的尺寸
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`width`&emsp;&emsp;umber&emsp; &emsp; x轴方向的长度  
-`tall` &emsp; &emsp; Number&emsp;&emsp;y轴方向的长度  
-`heighc`&emsp;&emsp;Number&emsp;&emsp;z轴方向的长度    
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">width</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>x轴方向的长度</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">tall</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的长度</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">heighc</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>z轴方向的长度</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#setSize3d](hc.Node.hcml#setSize3d)
@@ -1777,12 +3018,34 @@ Inherited From:
 #### setStyle(name, value)
 
 设置样式
-
-#### Parameters:
->Name&emsp;&emsp;Type&emsp;&emsp;Description  
-`name`&emsp; &emsp; String&emsp; 样式名  
-`value`&emsp;&emsp;Object&emsp; 样式值  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">name</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>样式名</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">value</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td><p>样式值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setStyle](hc.Data.hcml#setStyle)
@@ -1790,19 +3053,51 @@ Inherited From:
 #### setSyncSize(clickThroughEnabled)
 
 设置块节点是否同步子节点大小
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Type&emsp;&emsp;&emsp;Description  
-`clickThroughEnabled`&emsp;&emsp;Boolean
-  
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">clickThroughEnabled</td>
+                <td>    
+                    <span style="color:#aaa">Boolean</span>       
+                </td>      
+                <td><p></p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### setTag(tag)
 
 设置标识号，可通过[getDataByTag](hc.DataModel.hcml#getDataByTag)快速查找
-
-##### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;Description  
-`tag`&emsp;&emsp;&emsp;String&emsp;&emsp;标识号  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">tag</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>标识号</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setTag](hc.Data.hcml#setTag)
@@ -1822,11 +3117,27 @@ Inherited From:
 #### setToolTip(toolTip)
 
 设置文字提示信息
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;Type&emsp;&emsp;Description  
-`toolTip`&emsp;&emsp;String&emsp;&emsp;文字提示  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">toolTip</td>
+                <td>    
+                    <span style="color:#aaa">String</span>       
+                </td>      
+                <td><p>文字提示</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Data#setToolTip](hc.Data.hcml#setToolTip)
@@ -1858,13 +3169,41 @@ Inherited From:
 #### t3(tx, ty, tz)
 
 在当前坐标的基础上增加x、y、z三个方向的平移值，[translate3d](hc.Node.hcml#translate3d)的缩写
-
-#### Parameters:
->Name &emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`tx`&emsp;&emsp; &emsp; Number&emsp;&emsp;x轴方向的平移值  
-`ty`&emsp;&emsp; &emsp; Number&emsp;&emsp;y轴方向的平移值   
-`tz`&emsp;&emsp; &emsp; Number&emsp;&emsp;z轴方向的平移值  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">tx</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>x轴方向的平移值</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">ty</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的平移值</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">tz</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>z轴方向的平移值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#t3](hc.Node.hcml#t3)
@@ -1876,12 +3215,37 @@ See:
 #### toChildren(matchFunc, scope) → {[hc.List](hc.List.hcml)}
 
 以matchFunc为过滤函数构建新的孩子元素集合
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;Attributes&emsp; &emsp; Description  
-`matchFunc`&emsp;function&emsp;\<optional> &emsp;&emsp;过滤函数  
-`scope`&emsp;&emsp;&emsp; Object &emsp; \<optional> &emsp;&emsp;函数域
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr style="color:#1F1F1F">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">matchFunc</td>
+                <td>    
+                    <span style="color:#aaa">function</span>       
+                </td>      
+                    <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>过滤函数</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">scope</td>
+                <td>    
+                    <span style="color:#aaa">Object</span>       
+                </td>      
+                <td style="color:#aaa">&lt;optional&gt;</td>
+                <td style="color:#333"><p>函数域</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 #### Returns:
 
 [hc.List](hc.List.hcml) - 孩子元素集合
@@ -1925,12 +3289,34 @@ Inherited From:
 #### translate(tx, ty)
 
 在当前坐标的基础上增加x、y两个方向的平移值
-
-#### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;Description  
-`tx`&emsp;&emsp;&emsp;Number&emsp;x轴方向的平移值  
-`ty`&emsp;&emsp;&emsp;Number&emsp;y轴方向的平移值
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">tx</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>x轴方向的平移值</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">ty</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的平移值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#translate](hc.Node.hcml#translate)
@@ -1938,13 +3324,41 @@ Inherited From:
 #### translate3d(tx, ty, tz)
 
 在当前坐标的基础上增加x、y、z三个方向的平移值，[t3](hc.Node.hcml#t3)的缩写
-
-##### Parameters:
->Name &emsp;Type&emsp;&emsp;&emsp;Description  
-`tx`&emsp;&emsp;&emsp;Number&emsp;x轴方向的平移值  
-`ty`&emsp;&emsp;&emsp;Number&emsp;y轴方向的平移值  
-`tz`&emsp;&emsp;&emsp;Number&emsp;z轴方向的平移值
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">tx</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>x轴方向的平移值</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">ty</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>y轴方向的平移值</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">tz</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>z轴方向的平移值</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#translate3d](hc.Node.hcml#translate3d)
@@ -1956,12 +3370,34 @@ See:
 #### translate3dBy(direction, distance)
 
 沿向量平移
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`direction`&emsp;&emsp;&emsp;Array&emsp;方向向量  
-`distance`&emsp;&emsp;&emsp;Number&emsp;平移距离  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">direction</td>
+                <td>    
+                    <span style="color:#aaa">Array</span>       
+                </td>      
+                <td><p>方向向量</p></td>
+            </tr>
+            <tr>  
+                <td style="color:#F17DA4">distance</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>平移距离</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#translate3dBy](hc.Node.hcml#translate3dBy)
@@ -1969,11 +3405,27 @@ Inherited From:
 #### translateBack(distance)
 
 沿向量\[0, 0, -1\]平移
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`distance`&emsp;&emsp;&emsp;Number&emsp;平移距离  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">distance</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>平移距离</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#translateBack](hc.Node.hcml#translateBack)
@@ -1981,11 +3433,27 @@ Inherited From:
 #### translateBottom(distance)
 
 沿向量\[0, -1, 0\]平移
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`distance`&emsp;&emsp;&emsp;Number&emsp;平移距离  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">distance</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>平移距离</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#translateBottom](hc.Node.hcml#translateBottom)
@@ -1993,11 +3461,27 @@ Inherited From:
 #### translateFront(distance)
 
 沿向量\[0, 0, 1\]平移
-
-##### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`distance`&emsp;&emsp;&emsp;Number&emsp;平移距离  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">distance</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>平移距离</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#translateFront](hc.Node.hcml#translateFront)
@@ -2005,11 +3489,27 @@ Inherited From:
 #### translateLeft(distance)
 
 沿向量\[-1, 0, 0\]平移
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`distance`&emsp;&emsp;&emsp;Number&emsp;平移距离  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">distance</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>平移距离</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#translateLeft](hc.Node.hcml#translateLeft)
@@ -2017,11 +3517,27 @@ Inherited From:
 #### translateRighc(distance)
 
 沿向量\[1, 0, 0\]平移
-
-#### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;Description    
-`distance`&emsp;&emsp;&emsp;Number&emsp;平移距离  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">distance</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>平移距离</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#translateRighc](hc.Node.hcml#translateRighc)
@@ -2031,9 +3547,27 @@ Inherited From:
 沿向量\[0, 1, 0\]平移
 
 ##### Parameters:
->Name &emsp;&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;Description  
-`distance`&emsp;&emsp;&emsp;Number&emsp;平移距离  
-
+<h5>Parameters:</h5>
+<div style="width:100%;background-color:#f4f7f8">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>  
+                <td style="color:#F17DA4">distance</td>
+                <td>    
+                    <span style="color:#aaa">Number</span>       
+                </td>      
+                <td><p>平移距离</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 Inherited From:
 
 *   [hc.Node#translateTop](hc.Node.hcml#translateTop)

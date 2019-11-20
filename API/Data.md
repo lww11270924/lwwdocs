@@ -8,10 +8,10 @@
 
 获取或设置attr属性；  
 1、一个参数：  
-· 当参数为 String 时相当于 [getAttr](hc.Data.hcml#getAttr)；  
-· 当参数为 Object 时，则会遍历该 Object 中的属性，逐个调用 [setAttr](hc.Data.hcml#setAttr) 设置属性值；  
+· 当参数为 String 时相当于 [getAttr](API/Data.md#getAttr)；  
+· 当参数为 Object 时，则会遍历该 Object 中的属性，逐个调用 [setAttr](API/Data.md#setAttr) 设置属性值；  
 2、两个参数：  
-· 相当于 [setAttr](hc.Data.hcml#setAttr)
+· 相当于 [setAttr](API/Data.md#setAttr)
 
 ##### Parameters:
 >Name&emsp;&emsp;&emsp;Type&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Attributes&emsp;&emsp;Description  
