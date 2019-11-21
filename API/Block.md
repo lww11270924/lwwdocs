@@ -42,8 +42,8 @@
     </table>
 </div>
 
-Inherited From:
-*   [hc.Data#a](API/Data.md#a)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#a](API/Data.md#a)</font>  
 #### <b>addChild</b>(child, index)
 添加孩子节点，index为孩子插入索引，为空则插入作为最后的孩子，内部会自动调用child的setParent
 <h5>Parameters:</h5>
@@ -61,7 +61,7 @@ Inherited From:
             <tr>  
                 <td style="color:#F17DA4">child</td>
                 <td>    
-                    <span style="color:#aaa">hc.Data</span>       
+                    <span style="color:#aaa" >hc.Data</span>       
                 </td>      
                     <td>         
                     </td>
@@ -79,9 +79,8 @@ Inherited From:
     </table>
 </div>
 
-Inherited From:
-
-*   [hc.Data#addChild](API/Data.md#addChild)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#addChild](API/Data.md#addChild)</font>  
 
 #### <b>addStyleIcon</b>(name, icon)
 
@@ -115,10 +114,8 @@ Inherited From:
     </table>
 </div>
 
-#### Returns:
-Inherited From:
-
-*   [hc.Data#addStyleIcon](hc.Data.hcml#addStyleIcon)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#addStyleIcon](API/Data.md#addStyleIcon)</font>  
 
 ##### Example
 ```
@@ -130,26 +127,24 @@ data.addStyleIcon("arrow1", {
     names: ['arrow']
 });
 ```
-#### clearChildren()
+#### <b>clearChildren()</b>
 
 删除所有孩子节点，内部会自动调用setParent  
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#clearChildren](API/Data.md#clearChildren)</font>  
 
-*   [hc.Data#clearChildren](hc.Data.hcml#clearChildren)
+#### <b>dm()</b> → {[hc.DataModel](API/DataModel.md)}
 
-#### dm() → {[hc.DataModel](API/DataModel.md)}
-
-获取[DataModel](hc.DataModel.hcml)，[getDataModel](hc.Data.hcml#getDataModel)的缩写
+获取[DataModel](hc.DataModel.md)，[getDataModel](API/Data.md#getDataModel)的缩写
 
 ##### Returns:
 
-[hc.DataModel](hc.DataModel.hcml) - dataModel
+&emsp;&emsp;[hc.DataModel](API/DataModel.md) - dataModel
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#dm](API/Data.md#dm)</font> 
 
-*   [hc.Data#dm](hc.Data.hcml#dm)
-
-#### eachChild(func, scope)
+#### <b>eachChild</b>(func, scope)
 
 遍历孩子元素
 <h5>Parameters:</h5>
@@ -185,9 +180,8 @@ Inherited From:
     </table>
 </div>
 
-Inherited From:
-
-*   [hc.Data#eachChild](API/Data.md#eachChild)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#eachChild](API/Data.md#eachChild)</font>
 
 #### Example
 ```
@@ -238,9 +232,8 @@ data.eachChild(function(child) {
     </table>
 </div>
 
-Inherited From:
-
-*   [hc.Data#firePropertyChange](API/Data.md#firePropertyChange)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#firePropertyChange](API/Data.md#firePropertyChange)</font>
 
 #### <b>fp</b>(property, oldValue, newValue)
 
@@ -286,35 +279,32 @@ Inherited From:
     </table>
 </div> 
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#fp](API/Data.md#fp)</font>
 
-*   [hc.Data#fp](hc.Data.hcml#fp)
-
-#### getAgentEdges() → {[hc.List](hc.List.hcml)}
+#### <b>getAgentEdges()</b> → {[hc.List](API/List.md)}
 
 获取当前图元代理的连线集合
 
 #### Returns:
 
-[hc.List](API/List.md)
+&emsp;&emsp;[hc.List](API/List.md)
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getAgentEdges](API/Node.md#getAgentEdges)</font>
 
-*   [hc.Node#getAgentEdges](API/Node.md#getAgentEdges)
-
-#### getAttaches() → {[hc.List](hc.List.hcml)}
+#### getAttaches() → {[hc.List](API/List.md)}
 
 获取吸附到自身的所有图元
 
 #### Returns:
 
-[hc.List](API/List.md)
+&emsp;&emsp;[hc.List](API/List.md)
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getAttaches](API/Node.md#getAttaches)</font>
 
-*   [hc.Node#getAttaches](hc.Node.hcml#getAttaches)
-
-#### getAttr(name) → {Object}
+#### <b>getAttr</b>(name)</b> → {Object}
 
 获取attr属性
 <h5>Parameters:</h5>
@@ -340,25 +330,21 @@ Inherited From:
 </div>
 #### Returns:
 
-Object
+&emsp;&emsp;Object
 
-Inherited From:
-
-*   [hc.Data#getAttr](API/Data.md#getAttr)
-
-#### getAttrObject() → {Object}
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getAttr](API/Data.md#getAttr)</font>
+#### <b>getAttrObject()</b> → {Object}
 
 获取attr属性对象，该属性默认为空，用于存储用户业务信息
 
 ##### Returns:
 
-Object - attr属性对象
+&emsp;&emsp;Object - attr属性对象
 
-Inherited From:
-
-*   [hc.Data#getAttrObject](API/Data.md#getAttrObject)
-
-#### getChildAt(index) → {[hc.Data](hc.Data.hcml)}
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getAttrObject](API/Data.md#getAttrObject)</font>
+#### <b>getChildAt</b>(index) → {[hc.Data](API/Data.md)}
 
 返回指定索引位置的孩子
 <h5>Parameters:</h5>
@@ -384,53 +370,46 @@ Inherited From:
 </div>
 #### Returns:
 
-[hc.Data](API/Data.md) - 索引对应的孩子
+&emsp;&emsp;[hc.Data](API/Data.md) - 索引对应的孩子
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getChildAt](API/Data.md#getChildAt)</font>
 
-*   [hc.Data#getChildAt](API/Data.md#getChildAt)
-
-#### getChildren() → {[hc.List](hc.List.hcml)}
+#### <b>getChildren()</b> → {[hc.List](API/List.md)}
 
 获取所有孩子节点
 
 ##### Returns:
 
-[hc.List](API/List.md) - 孩子元素集合
+&emsp;&emsp;[hc.List](API/List.md) - 孩子元素集合
 
-Inherited From:
-
-*   [hc.Data#getChildren](PAI/Data.md#getChildren)
-
-#### getClass() → {function}
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getChildren](PAI/Data.md#getChildren)</font>
+#### <b>getClass()</b> → {function}
 
 获取类声明(构造函数)
 
 ##### Returns:
 
-function - 类声明(构造函数)
+&emsp;&emsp;function - 类声明(构造函数)
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getClass](API/Data.md#getClass)</font>
 
-*   [hc.Data#getClass](API/Data.md#getClass)
-
-#### getClassName() → {String}
+#### <b>getClassName()</b> → {String}
 
 获取类全名，继承Data并希望序列化时应该重写此方法返回子类的类名字符串
 
 #### Returns:
 
-String - 类全名
+&emsp;&emsp;String - 类全名
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getClassName](API/Data.md#getClassName)</font>  
+See:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getSuperClass](API/Data.md#getSuperClass)</font> 
 
-*   [hc.Data#getClassName](API/Data.md#getClassName)
-
-See:
-
-*   [hc.Data#getSuperClass](API/Data.md#getSuperClass)
-
-#### getCorners(xPadding, yPadding) → {Array}
+#### <b>getCorners</b>(xPadding, yPadding) → {Array}
 
 获取图元四个角的实时坐标(包括旋转后的坐标)
 <h5>Parameters:</h5>
@@ -461,13 +440,13 @@ See:
         </tbody>
     </table>
 </div>
+
 #### Returns:
 
-Array - 四个角坐标，顺序为左上，右上，右下，左下
+&emsp;&emsp;Array - 四个角坐标，顺序为左上，右上，右下，左下
 
 Inherited From:
-
-*   [hc.Node#getCorners](hc.Node.hcml#getCorners)
+&emsp;&emsp;<font color=Blue>[hc.Node#getCorners](API/Node.md#getCorners)</font> 
 
 ##### Example
 
@@ -479,177 +458,159 @@ Inherited From:
     {x: 0, y: 100}//左下
     ]
 
-#### getDataModel() → {[hc.DataModel](API/DataModel.md)}
+#### <b>getDataModel()</b> → {[hc.DataModel](API/DataModel.md)}
 
 获取所属的DataModel
 
 #### Returns:
 
-[hc.DataModel](API/DataModel.md) - DataModel数据容器
+&emsp;&emsp;[hc.DataModel](API/DataModel.md) - DataModel数据容器
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getDataModel](API/Data.md#getDataModel)</font>
 
-*   [hc.Data#getDataModel](API/Data.md#getDataModel)
-
-#### getDisplayName() → {String}
+#### <b>getDisplayName()</b> → {String}
 
 获取显示名称，常作为Column和Property的列头和属性名称显示
 
 ##### Returns:
 
-String - 显示名称
+&emsp;&emsp;String - 显示名称
 
-Inherited From:
-
-*   [hc.Data#getDisplayName](API/Data.md#getDisplayName)
-
-#### getEdges() → {[hc.List](hc.List.hcml)}
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getDisplayName](API/Data.md#getDisplayName)</font>  
+#### <b>getEdges()</b> → {[hc.List](API/List.md)}
 
 获取所有跟图元关联的连线(不包括代理的连线)
 
 ##### Returns:
 
-[hc.List](hc.List.hcml)
+&emsp;&emsp;[hc.List](API/List.md)
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getEdges](API/Node.md#getEdges)</font>  
 
-*   [hc.Node#getEdges](hc.Node.hcml#getEdges)
-
-#### getElevation() → {Number}
+#### <b>getElevation()</b> → {Number}
 
 获取图元中心在3D坐标系中的y坐标
 
 ##### Returns:
 
-Number
+&emsp;&emsp;Number
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getElevation](API/Node.md#getElevation)</font> 
 
-*   [hc.Node#getElevation](hc.Node.hcml#getElevation)
-
-#### getHeighc() → {Number}
+#### <b>getHeighc()</b> → {Number}
 
 获取图元在2D拓扑中的高度，或3D拓扑中的z轴长度
 
 ##### Returns:
 
-Number
+&emsp;&emsp;Number
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getHeighc](API/Node.md#getHeighc)</font> 
 
-*   [hc.Node#getHeighc](hc.Node.hcml#getHeighc)
-
-#### getHost() → {[hc.Data](hc.Data.hcml)}
+#### <b>getHost()</b> → {[hc.Data](API/Data.md)}
 
 获取宿主图元，当图元吸附上宿主图元时，宿主移动或旋转时会带动所有吸附者
 
 ##### Returns:
+&emsp;&emsp;<font color=Blue>[hc.Data](API/Data.md)</font> 
 
-[hc.Data](hc.Data.hcml)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getHost](API/Node.md#getHost)</font>
 
-Inherited From:
-
-*   [hc.Node#getHost](hc.Node.hcml#getHost)
-
-#### getIcon() → {String|Object}
+#### <b>getIcon()</b> → {String|Object}
 
 获取小图标名称，常作为TreeView和ListView等组件上的节点小图标
 
 ##### Returns:
 
-String | Object - 图标名或矢量
+&emsp;&emsp;String | Object - 图标名或矢量
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getIcon](API/Data.md#getIcon)</font>
 
-*   [hc.Data#getIcon](hc.Data.hcml#getIcon)
-
-#### getId() → {Number}
+#### <b>getId()</b> → {Number}
 
 获取唯一编号
 
 ##### Returns:
 
-Number - 唯一编号
+&emsp;&emsp;Number - 唯一编号
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getId](API/Data.md#getId)</font>
 
-*   [hc.Data#getId](hc.Data.hcml#getId)
-
-#### getImage() → {[hc.Data](hc.Data.hcml)}
+#### <b>getImage()</b> → {[hc.Data](API/Data.md)}
 
 获取拓扑上展现的图片信息，在GraphView拓扑图中图片一般以position为中心绘制
 
 ##### Returns:
+&emsp;&emsp;<font color=Blue>[hc.Data](API/Data.md)</font>
 
-[hc.Data](hc.Data.hcml)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getImage](API/Node.md#getImage)</font>
 
-Inherited From:
-
-*   [hc.Node#getImage](hc.Node.hcml#getImage)
-
-#### getLayer() → {String|Number}
+#### <b>getLayer()</b> → {String|Number}
 
 获取数据元素在GraphView组件中的图层位置
 
 ##### Returns:
 
-String | Number - 图层名
+&emsp;&emsp;String | Number - 图层名
 
-Inherited From:
-
-*   [hc.Data#getLayer](hc.Data.hcml#getLayer)
-
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getLayer](API/Data.md#getLayer)</font>
+ 
 Default Value:
 
 *   0
 
-#### getLoopedEdges() → {[hc.List](hc.List.hcml)}
+#### <b>getLoopedEdges()</b> → {[hc.List](API/List.md)}
 
 获取所有跟节点关联的自环连线
 
 ##### Returns:
+&emsp;&emsp;[hc.List](API/List.md)
 
-[hc.List](hc.List.hcml)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getLoopedEdges](API/Node.md#getLoopedEdges)</font>
 
-Inherited From:
-
-*   [hc.Node#getLoopedEdges](hc.Node.hcml#getLoopedEdges)
-
-#### getName() → {String}
+#### <b>getName()</b> → {String}
 
 获取数据元素名
 
 ##### Returns:
 
-String - 名称
+&emsp;&emsp;String - 名称
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getName](API/Data.md#getName)</font>
 
-*   [hc.Data#getName](hc.Data.hcml#getName)
-
-#### getParent() → {[hc.Data](hc.Data.hcml)}
+#### <b>getParent()</b> → {[hc.Data](API/Data.md)}
 
 获取父元素
 
 ##### Returns:
 
-[hc.Data](hc.Data.hcml) - 父元素
+[hc.Data](API/Data.md) - 父元素
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getParent](API/Data.md#getParent)</font>
 
-*   [hc.Data#getParent](hc.Data.hcml#getParent)
-
-#### getPosition() → {Object}
+#### <b>getPosition()</b> → {Object}
 
 获取图元中心点坐标
 
 ##### Returns:
 
-Object
+&emsp;&emsp;Object
 
-Inherited From:
-
-*   [hc.Node#getPosition](hc.Node.hcml#getPosition)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getPosition](API/Node.md#getPosition)</font>
 
 ##### Example
 
@@ -659,60 +620,56 @@ Inherited From:
     	y: 0
     }
 
-#### getPosition3d() → {Array}
+#### <b>getPosition3d()</b> → {Array}
 
 获取图元中心点在3D拓扑中的三维坐标
 
 ##### Returns:
 
-Array - 三维坐标数组，格式为\[x, y, z\]
+&emsp;&emsp;Array - 三维坐标数组，格式为\[x, y, z\]
 
 Inherited From:
+&emsp;&emsp;<font color=Blue>[hc.Node#getPosition3d](API/Node.md#getPosition3d)</font>
 
-*   [hc.Node#getPosition3d](hc.Node.hcml#getPosition3d)
-
-#### getRect() → {Object}
+#### <b>getRect()</b> → {Object}
 
 获取图元的矩形区域(包括旋转)
 
 ##### Returns:
 
-Object - 矩形区域
+&emsp;&emsp;Object - 矩形区域
 
-Inherited From:
-
-*   [hc.Node#getRect](hc.Node.hcml#getRect)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getRect](API/Node.md#getRect)</font>
 
 ##### Example
 
     //返回值示例：
     {x: 0, y: 0, width: 100, heighc: 100}
 
-#### getRotation() → {Number}
+#### <b>getRotation()</b> → {Number}
 
 获取图元的旋转角度，围绕中心点顺时针旋转
 
 ##### Returns:
 
-Number - 旋转角度(弧度制)
+&emsp;&emsp;Number - 旋转角度(弧度制)
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getRotation](API/Node.md#getRotation)</font>
 
-*   [hc.Node#getRotation](hc.Node.hcml#getRotation)
-
-#### getRotation3d() → {Array}
+#### <b>getRotation3d()</b> → {Array}
 
 获取图元在3D拓扑中的三维旋转角度
 
 ##### Returns:
 
-Array - 三维旋转角度(弧度制)，格式为\[x, y, z\]，即\[getRotationX(), -getRotation(), getRotationZ()\]
+&emsp;&emsp;Array - 三维旋转角度(弧度制)，格式为\[x, y, z\]，即\[getRotationX(), -getRotation(), getRotationZ()\]
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getRotation3d](API/Node.md#getRotation3d)</font>
 
-*   [hc.Node#getRotation3d](hc.Node.hcml#getRotation3d)
-
-#### getRotationMode() → {String}
+#### <b>getRotationMode()</b> → {String}
 
 返回三维旋转模式  
   
@@ -720,15 +677,13 @@ Inherited From:
 
 ##### Returns:
 
-String - 三维旋转模式，xyz|xzy|yxz|yzx|zxy|zyx
+&emsp;&emsp;String - 三维旋转模式，xyz|xzy|yxz|yzx|zxy|zyx
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getRotationMode](API/Node.md#getRotationMode)</font>
 
-*   [hc.Node#getRotationMode](hc.Node.hcml#getRotationMode)
-
-See:
-
-*   [setRotationMode](hc.Node.hcml#setRotationMode)
+See:  
+&emsp;&emsp;<font color=Blue>[setRotationMode](API/Node.md#setRotationMode)</font>
 
 #### getRotationX() → {Number}
 
@@ -736,11 +691,10 @@ See:
 
 ##### Returns:
 
-Number
+&emsp;&emsp;Number
 
-Inherited From:
-
-*   [hc.Node#getRotationX](hc.Node.hcml#getRotationX)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getRotationX](API/Node.md#getRotationX)</font>
 
 #### getRotationY() → {Number}
 
@@ -748,11 +702,10 @@ Inherited From:
 
 ##### Returns:
 
-Number
+&emsp;&emsp;Number
 
-Inherited From:
-
-*   [hc.Node#getRotationY](hc.Node.hcml#getRotationY)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getRotationY](API/Node.md#getRotationY)</font>
 
 #### getRotationZ() → {Number}
 
@@ -760,11 +713,10 @@ Inherited From:
 
 ##### Returns:
 
-Number
+&emsp;&emsp;Number
 
-Inherited From:
-
-*   [hc.Node#getRotationZ](hc.Node.hcml#getRotationZ)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getRotationZ](API/Node.md#getRotationZ)</font>
 
 #### getScale() → {Object}
 
@@ -772,11 +724,10 @@ Inherited From:
 
 ##### Returns:
 
-Object
+&emsp;&emsp;Object
 
-Inherited From:
-
-*   [hc.Node#getScale](hc.Node.hcml#getScale)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getScale](API/Node.md#getScale)</font>
 
 ##### Example
 
@@ -792,11 +743,10 @@ Inherited From:
 
 ##### Returns:
 
-Array - 格式为\[x, y, z\]，即\[getScaleX(), getScaleTall(), getScaleY()\]
+&emsp;&emsp;Array - 格式为\[x, y, z\]，即\[getScaleX(), getScaleTall(), getScaleY()\]
 
-Inherited From:
-
-*   [hc.Node#getScale3d](hc.Node.hcml#getScale3d)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getScale3d](API/Node.md#getScale3d)</font>
 
 #### getScaleTall() → {Number}
 
@@ -804,11 +754,10 @@ Inherited From:
 
 ##### Returns:
 
-Number - y轴方向缩放值
+&emsp;&emsp;Number - y轴方向缩放值
 
-Inherited From:
-
-*   [hc.Node#getScaleTall](hc.Node.hcml#getScaleTall)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getScaleTall](API/Node.md#getScaleTall)</font>
 
 #### getScaleX() → {Number}
 
@@ -816,11 +765,10 @@ Inherited From:
 
 ##### Returns:
 
-Number - x轴方向缩放值
+&emsp;&emsp;Number - x轴方向缩放值
 
-Inherited From:
-
-*   [hc.Node#getScaleX](hc.Node.hcml#getScaleX)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getScaleX](API/Node.md#getScaleX)</font>
 
 #### getScaleY() → {Number}
 
@@ -828,11 +776,10 @@ Inherited From:
 
 ##### Returns:
 
-Number - y轴方向缩放值
+&emsp;&emsp;Number - y轴方向缩放值
 
-Inherited From:
-
-*   [hc.Node#getScaleY](hc.Node.hcml#getScaleY)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getScaleY](API/Node.md#getScaleY)</font>
 
 #### getSerializableAttrs() → {Object}
 
@@ -840,11 +787,10 @@ Inherited From:
 
 ##### Returns:
 
-Object - 需要被序列化的attr属性map
+&emsp;&emsp;Object - 需要被序列化的attr属性map
 
-Inherited From:
-
-*   [hc.Data#getSerializableAttrs](hc.Data.hcml#getSerializableAttrs)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getSerializableAttrs](API/Data.md#getSerializableAttrs)</font>
 
 ##### Example
 
@@ -862,11 +808,10 @@ Inherited From:
 
 ##### Returns:
 
-Object - 需要被序列化的属性map
+&emsp;&emsp;Object - 需要被序列化的属性map
 
-Inherited From:
-
-*   [hc.Data#getSerializableProperties](hc.Data.hcml#getSerializableProperties)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getSerializableProperties](API/Data.md#getSerializableProperties)</font>
 
 ##### Example
 
@@ -889,12 +834,10 @@ Inherited From:
 
 ##### Returns:
 
-Object - 需要被序列化的样式map
+&emsp;&emsp;Object - 需要被序列化的样式map
 
-Inherited From:
-
-*   [hc.Data#getSerializableStyles](hc.Data.hcml#getSerializableStyles)
-
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getSerializableStyles](API/Data.md#getSerializableStyles)</font>
 ##### Example
 
     function(){
@@ -911,11 +854,10 @@ Inherited From:
 
 ##### Returns:
 
-Object
+&emsp;&emsp;Object
 
-Inherited From:
-
-*   [hc.Node#getSize](hc.Node.hcml#getSize)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getSize](API/Node.md#getSize)</font>
 
 ##### Example
 
@@ -931,35 +873,31 @@ Inherited From:
 
 ##### Returns:
 
-Array - 格式为\[x, y, z\]，即\[getWidth(), getTall(), getHeighc()\]
+&emsp;&emsp;Array - 格式为\[x, y, z\]，即\[getWidth(), getTall(), getHeighc()\]
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getSize3d](API/Node.md#getSize3d)</font> 
 
-*   [hc.Node#getSize3d](hc.Node.hcml#getSize3d)
-
-#### getSourceAgentEdges() → {[hc.List](hc.List.hcml)}
+#### getSourceAgentEdges() → {[hc.List](API/List.md)}
 
 获取代理的起始于该图元的连线
 
 ##### Returns:
 
-[hc.List](hc.List.hcml)
+[hc.List](API/List.md)
 
-Inherited From:
-
-*   [hc.Node#getSourceAgentEdges](hc.Node.hcml#getSourceAgentEdges)
-
-#### getSourceEdges() → {[hc.List](hc.List.hcml)}
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getSourceAgentEdges](API/Node.md#getSourceAgentEdges)</font> 
+#### getSourceEdges() → {[hc.List](API/List.md)}
 
 获取跟图元关联的并起始于该图元的连线(不包括代理的连线)
 
 ##### Returns:
 
-[hc.List](hc.List.hcml)
+&emsp;&emsp;[hc.List](API/List.md)
 
-Inherited From:
-
-*   [hc.Node#getSourceEdges](hc.Node.hcml#getSourceEdges)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getSourceEdges](API/Node.md#getSourceEdges)</font> 
 
 #### getStyle(name) → {Object}
 
@@ -985,13 +923,13 @@ Inherited From:
         </tbody>
     </table>
 </div>
+
 #### Returns:
 
-Object
+&emsp;&emsp;Object
 
-Inherited From:
-
-*   [hc.Data#getStyle](hc.Data.hcml#getStyle)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getStyle](API/Data.md#getStyle)</font> 
 
 #### getStyleMap() → {Object}
 
@@ -999,11 +937,10 @@ Inherited From:
 
 ##### Returns:
 
-Object - 样式映射表
+&emsp;&emsp;Object - 样式映射表
 
-Inherited From:
-
-*   [hc.Data#getStyleMap](hc.Data.hcml#getStyleMap)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getStyleMap](API/Data.md#getStyleMap)</font> 
 
 #### getSuperClass() → {function}
 
@@ -1011,11 +948,10 @@ Inherited From:
 
 ##### Returns:
 
-function - 父类声明(构造函数)
+&emsp;&emsp;function - 父类声明(构造函数)
 
-Inherited From:
-
-*   [hc.Data#getSuperClass](hc.Data.hcml#getSuperClass)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getSuperClass](API/Data.md#getSuperClass)</font> 
 
 ##### Example
 
@@ -1031,15 +967,14 @@ Inherited From:
 
 #### getTag() → {String}
 
-获取标识号，可通过[getDataByTag](hc.DataModel.hcml#getDataByTag)快速查找
+获取标识号，可通过[getDataByTag](API/DataModel.md#getDataByTag)快速查找
 
 ##### Returns:
 
-String - 标识号
+&emsp;&emsp;String - 标识号
 
-Inherited From:
-
-*   [hc.Data#getTag](hc.Data.hcml#getTag)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getTag](API/Data.md#getTag)</font> 
 
 #### getTall() → {Number}
 
@@ -1047,35 +982,32 @@ Inherited From:
 
 ##### Returns:
 
-Number
+&emsp;&emsp;Number
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getTall](API/Node.md#getTall)</font> 
 
-*   [hc.Node#getTall](hc.Node.hcml#getTall)
-
-#### getTargetAgentEdges() → {[hc.List](hc.List.hcml)}
+#### getTargetAgentEdges() → {[hc.List](API/List.md)}
 
 获取图元代理的结束于该图元的连线
 
 ##### Returns:
 
-[hc.List](hc.List.hcml)
+&emsp;&emsp;[hc.List](API/List.md)
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getTargetAgentEdges](API/Node.md#getTargetAgentEdges)</font> 
 
-*   [hc.Node#getTargetAgentEdges](hc.Node.hcml#getTargetAgentEdges)
-
-#### getTargetEdges() → {[hc.List](hc.List.hcml)}
+#### getTargetEdges() → {[hc.List](API/List.md)}
 
 获取跟图元关联的并结束于该图元的连线(不包括代理的连线)
 
 ##### Returns:
 
-[hc.List](hc.List.hcml)
+&emsp;&emsp;[hc.List](API/List.md)
 
-Inherited From:
-
-*   [hc.Node#getTargetEdges](hc.Node.hcml#getTargetEdges)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getTargetEdges](API/Node.md#getTargetEdges)</font> 
 
 #### getToolTip() → {String}
 
@@ -1083,11 +1015,10 @@ Inherited From:
 
 ##### Returns:
 
-String - 文字提示
+&emsp;&emsp;String - 文字提示
 
-Inherited From:
-
-*   [hc.Data#getToolTip](hc.Data.hcml#getToolTip)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getToolTip](API/Data.md#getToolTip)</font> 
 
 #### getUIClass() → {function}
 
@@ -1095,11 +1026,10 @@ Inherited From:
 
 ##### Returns:
 
-function - UI类声明(构造函数)
+&emsp;&emsp;function - UI类声明(构造函数)
 
-Inherited From:
-
-*   [hc.Data#getUIClass](hc.Data.hcml#getUIClass)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#getUIClass](API/Data.md#getUIClass)</font> 
 
 #### getWidth() → {Number}
 
@@ -1107,11 +1037,10 @@ Inherited From:
 
 ##### Returns:
 
-Number
+&emsp;&emsp;Number
 
-Inherited From:
-
-*   [hc.Node#getWidth](hc.Node.hcml#getWidth)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#getWidth](API/Node.md#getWidth)</font> 
 
 #### handleHostPropertyChange(event)
 
@@ -1137,9 +1066,9 @@ Inherited From:
         </tbody>
     </table>
 </div> 
-Inherited From:
 
-*   [hc.Node#handleHostPropertyChange](hc.Node.hcml#handleHostPropertyChange)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#handleHostPropertyChange](API/Node.md#handleHostPropertyChange)</font> 
 
 #### hasAgentEdges() → {Boolean}
 
@@ -1147,11 +1076,10 @@ Inherited From:
 
 ##### Returns:
 
-Boolean
+&emsp;&emsp;Boolean
 
-Inherited From:
-
-*   [hc.Node#hasAgentEdges](hc.Node.hcml#hasAgentEdges)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#hasAgentEdges](API/Node.md#hasAgentEdges)</font> 
 
 #### hasChildren() → {Boolean}
 
@@ -1159,19 +1087,17 @@ Inherited From:
 
 ##### Returns:
 
-Boolean - 是否有孩子
+&emsp;&emsp;Boolean - 是否有孩子
 
-Inherited From:
-
-*   [hc.Data#hasChildren](hc.Data.hcml#hasChildren)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#hasChildren](API/Data.md#hasChildren)</font> 
 
 #### invalidate()
 
 强制触发属性变化事件通知界面更新
 
-Inherited From:
-
-*   [hc.Data#invalidate](hc.Data.hcml#invalidate)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#invalidate](API/Data.md#invalidate)</font> 
 
 #### isAdjustChildrenToTop() → {Boolean}
 
@@ -1179,11 +1105,10 @@ GraphView点击图元会自动sendToTop，该属性决定是否对子图元也�
 
 ##### Returns:
 
-Boolean - 是否将children自动sendToTop
+&emsp;&emsp;Boolean - 是否将children自动sendToTop
 
-Inherited From:
-
-*   [hc.Data#isAdjustChildrenToTop](hc.Data.hcml#isAdjustChildrenToTop)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#isAdjustChildrenToTop](API/Data.md#isAdjustChildrenToTop)</font> 
 
 #### isClickThroughEnabled() → {Boolean}
 
@@ -1191,7 +1116,7 @@ Inherited From:
 
 ##### Returns:
 
-Boolean
+&emsp;&emsp;Boolean
 
 #### isDescendantOf(data) → {Boolean}
 
@@ -1217,25 +1142,24 @@ Boolean
         </tbody>
     </table>
 </div> 
+
 ##### Returns:
 
-Boolean - 自身是否为指定data的子孙
+&emsp;&emsp;Boolean - 自身是否为指定data的子孙
 
-Inherited From:
-
-*   [hc.Data#isDescendantOf](hc.Data.hcml#isDescendantOf)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#isDescendantOf](API/Data.md#isDescendantOf)</font> 
 
 #### isEmpty() → {Boolean}
 
-判断是否有孩子，同[hasChildren](hc.Data.hcml#hasChildren)
+判断是否有孩子，同[hasChildren](API/Data.md#hasChildren)
 
 ##### Returns:
 
-Boolean - 是否有孩子
+&emsp;&emsp;Boolean - 是否有孩子
 
-Inherited From:
-
-*   [hc.Data#isEmpty](hc.Data.hcml#isEmpty)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#isEmpty](API/Data.md#isEmpty)</font> 
 
 #### isHostOn(node) → {Boolean}
 
@@ -1261,13 +1185,12 @@ Inherited From:
         </tbody>
     </table>
 </div> 
+
 #### Returns:
+&emsp;&emsp;Boolean
 
-Boolean
-
-Inherited From:
-
-*   [hc.Node#isHostOn](hc.Node.hcml#isHostOn)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#isHostOn](API/Node.md#isHostOn)</font> 
 
 #### isParentOf(data) → {Boolean}
 
@@ -1293,13 +1216,12 @@ Inherited From:
         </tbody>
     </table>
 </div> 
+
 #### Returns:
+&emsp;&emsp;Boolean - 自身是否为指定data的父亲
 
-Boolean - 自身是否为指定data的父亲
-
-Inherited From:
-
-*   [hc.Data#isParentOf](hc.Data.hcml#isParentOf)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#isParentOf](API/Data.md#isParentOf)</font> 
 
 #### isRelatedTo(data) → {Boolean}
 
@@ -1325,13 +1247,13 @@ Inherited From:
         </tbody>
     </table>
 </div> 
+
 #### Returns:
 
-Boolean - 自身与指定data是否有父子或子孙关系
+&emsp;&emsp;Boolean - 自身与指定data是否有父子或子孙关系
 
-Inherited From:
-
-*   [hc.Data#isRelatedTo](hc.Data.hcml#isRelatedTo)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#isRelatedTo](API/Data.md#isRelatedTo)</font> 
 
 #### isSyncSize() → {Boolean}
 
@@ -1339,15 +1261,14 @@ Inherited From:
 
 ##### Returns:
 
-Boolean
+&emsp;&emsp;Boolean
 
 #### iv()
 
-强制触发属性变化事件通知界面更新，[invalidate](hc.Data.hcml#invalidate)的缩写
+强制触发属性变化事件通知界面更新，[invalidate](API/Data.md#invalidate)的缩写
 
-Inherited From:
-
-*   [hc.Data#iv](hc.Data.hcml#iv)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#iv](API/Data.md#iv)</font> 
 
 #### onChildAdded(child, index)
 
@@ -1380,9 +1301,9 @@ Inherited From:
         </tbody>
     </table>
 </div> 
-Inherited From:
 
-*   [hc.Data#onChildAdded](hc.Data.hcml#onChildAdded)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#onChildAdded](API/Data.md#onChildAdded)</font> 
 
 #### onChildRemoved(child, index)
 
@@ -1415,9 +1336,9 @@ Inherited From:
         </tbody>
     </table>
 </div> 
-Inherited From:
 
-*   [hc.Data#onChildRemoved](hc.Data.hcml#onChildRemoved)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#onChildRemoved](API/Data.md#onChildRemoved)</font> 
 
 #### onHostChanged(oldHost, newHost)
 
@@ -1450,10 +1371,9 @@ Inherited From:
         </tbody>
     </table>
 </div> 
-Inherited From:
 
-*   [hc.Node#onHostChanged](hc.Node.hcml#onHostChanged)
-
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#onHostChanged](API/Node.md#onHostChanged)</font> 
 #### onParentChanged(oldParent, parent)
 
 改变父亲元素时的回调函数，可重载做后续处理
@@ -1485,9 +1405,9 @@ Inherited From:
         </tbody>
     </table>
 </div> 
-Inherited From:
 
-*   [hc.Data#onParentChanged](hc.Data.hcml#onParentChanged)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#onParentChanged](API/Data.md#onParentChanged)</font> 
 
 #### onPropertyChanged(event)
 
@@ -1513,9 +1433,9 @@ Inherited From:
         </tbody>
     </table>
 </div> 
-Inherited From:
 
-*   [hc.Data#onPropertyChanged](hc.Data.hcml#onPropertyChanged)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#onPropertyChanged](API/Data.md#onPropertyChanged)</font> 
 
 ##### Example
 
@@ -1565,13 +1485,13 @@ Inherited From:
         </tbody>
     </table>
 </div> 
-Inherited From:
 
-*   [hc.Data#onStyleChanged](hc.Data.hcml#onStyleChanged)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#onStyleChanged](API/Data.md#onStyleChanged)</font> 
 
 #### p(x, y) → {Object}
 
-获取或设置设置图元中心点坐标，有参数时相当于[setPosition](hc.Node.hcml#setPosition)，没有参数时相当于[getPosition](hc.Node.hcml#getPosition)
+获取或设置设置图元中心点坐标，有参数时相当于[setPosition](hc.Node.md#setPosition)，没有参数时相当于[getPosition](hc.Node.md#getPosition)
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>
@@ -1603,22 +1523,18 @@ Inherited From:
         </tbody>
     </table>
 </div>
+
 #### Returns:
+&emsp;&emsp;Object - 坐标值，格式为:{x: x, y: y}
 
-Object - 坐标值，格式为:{x: x, y: y}
-
-Inherited From:
-
-*   [hc.Node#p](hc.Node.hcml#p)
-
-See:
-
-*   [setPosition](hc.Node.hcml#setPosition)
-*   [getPosition](hc.Node.hcml#getPosition)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#p](API/Node.md#p)</font>   
+See:  
+&emsp;&emsp;<font color=Blue>[setPosition](API/Node.md#setPosition)</font> 
 
 #### p3(x, y, z) → {Array}
 
-获取或设置图元中心点在3D拓扑中的三维坐标，有三个参数时相当于[setPosition3d](hc.Node.hcml#setPosition3d)，没有参数时相当于[getPosition3d](hc.Node.hcml#getPosition3d)
+获取或设置图元中心点在3D拓扑中的三维坐标，有三个参数时相当于[setPosition3d](API/Node.md#setPosition3d)，没有参数时相当于[getPosition3d](API/Node.md#getPosition3d)
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>
@@ -1658,22 +1574,20 @@ See:
         </tbody>
     </table>
 </div>
+
 #### Returns:
 
-Array - 三维坐标数组，格式为\[x, y, z\]
+&emsp;&emsp;Array - 三维坐标数组，格式为\[x, y, z\]
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#p3](API/Node.md#p3)</font> 
 
-*   [hc.Node#p3](hc.Node.hcml#p3)
-
-See:
-
-*   [setPosition3d](hc.Node.hcml#setPosition3d)
-*   [getPosition3d](hc.Node.hcml#getPosition3d)
+See:  
+&emsp;&emsp;<font color=Blue>[setPosition3d](API/Node.md#setPosition3d)</font> 
 
 #### r3(rotationX, rotationY, rotationZ) → {Array}
 
-获取或设置图元在3D拓扑中的三维旋转角度，有三个参数时相当于[setRotation3d](hc.Node.hcml#setRotation3d)，没有参数时相当于[getRotation3d](hc.Node.hcml#getRotation3d)
+获取或设置图元在3D拓扑中的三维旋转角度，有三个参数时相当于[setRotation3d](API/Node.md#setRotation3d)，没有参数时相当于[getRotation3d](API/Node.md#getRotation3d)
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>
@@ -1713,18 +1627,15 @@ See:
         </tbody>
     </table>
 </div>
-#### Returns:
 
-Array - 三维旋转角度(弧度制)，格式为\[x, y, z\]，即\[getRotationX(), -getRotation(), getRotationZ()\]
+#### Returns:  
+&emsp;&emsp;Array - 三维旋转角度(弧度制)，格式为\[x, y, z\]，即\[getRotationX(), -getRotation(), getRotationZ()\]
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#r3](API/Node.md#r3)</font> 
 
-*   [hc.Node#r3](hc.Node.hcml#r3)
-
-See:
-
-*   [setRotation3d](hc.Node.hcml#setRotation3d)
-*   [getRotation3d](hc.Node.hcml#getRotation3d)
+See:  
+&emsp;&emsp;<font color=Blue>[setRotation3d](API/Node.md#setRotation3d)</font> 
 
 #### removeChild(child)
 
@@ -1732,11 +1643,10 @@ See:
 
 ##### Parameters:
 >Name &emsp;Type&emsp;Description  
-`child`&emsp; [hc.Data](hc.Data.hcml)&emsp;要删除的孩子元素  
+`child`&emsp; [hc.Data](API/Data.md)&emsp;要删除的孩子元素  
 
-Inherited From:
-
-*   [hc.Data#removeChild](hc.Data.hcml#removeChild)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#removeChild](API/Data.md#removeChild)</font> 
 
 #### removeStyleIcon(name)
 
@@ -1762,9 +1672,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#removeStyleIcon](hc.Data.hcml#removeStyleIcon)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#removeStyleIcon](API/Data.md#removeStyleIcon)</font> 
 
 #### rotateAt(x, y, angle)
 
@@ -1804,13 +1714,13 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#rotateAt](hc.Node.hcml#rotateAt)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#rotateAt](API/Node.md#rotateAt)</font> 
 
 #### s(name, value) → {Object}
 
-获取或设置样式，仅有一个参数时相当于[getStyle](hc.Data.hcml#getStyle)，有两个参数时相当于[setStyle](hc.Data.hcml#setStyle)
+获取或设置样式，仅有一个参数时相当于[getStyle](API/Data.md#getStyle)，有两个参数时相当于[setStyle](API/Data.md#setStyle)
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>
@@ -1843,17 +1753,17 @@ Inherited From:
         </tbody>
     </table>
 </div>
+
 #### Returns:
 
-Object
+&emsp;&emsp;Object
 
-Inherited From:
-
-*   [hc.Data#s](hc.Data.hcml#s)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#s](API/Data.md#s)</font> 
 
 #### s3(width, tall, heighc) → {Array}
 
-获取或设置图元在3D拓扑中的尺寸，有三个参数时相当于[setSize3d](hc.Node.hcml#setSize3d)，没有参数时相当于[getSize3d](hc.Node.hcml#getSize3d)
+获取或设置图元在3D拓扑中的尺寸，有三个参数时相当于[setSize3d](API/Node.md#setSize3d)，没有参数时相当于[getSize3d](API/Node.md#getSize3d)
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>
@@ -1889,18 +1799,16 @@ Inherited From:
         </tbody>
     </table>
 </div>
+
 #### Returns:
 
-Array - 格式为\[x, y, z\]，即\[getWidth(), getTall(), getHeighc()\]  
+&emsp;&emsp;Array - 格式为\[x, y, z\]，即\[getWidth(), getTall(), getHeighc()\]  
 
-Inherited From:
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#s3](API/Node.md#s3)</font> 
 
-*   [hc.Node#s3](hc.Node.hcml#s3)
-
-See:
-
-*   [setSize3d](hc.Node.hcml#setSize3d)
-*   [getSize3d](hc.Node.hcml#getSize3d)
+See:  
+&emsp;&emsp;<font color=Blue>[setSize3d](API/Node.md#setSize3d)</font>  
 
 #### setAdjustChildrenToTop(adjustToTop)
 
@@ -1926,9 +1834,9 @@ GraphView点击图元会自动sendToTop，该属性决定是否对子图元也�
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setAdjustChildrenToTop](hc.Data.hcml#setAdjustChildrenToTop)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setAdjustChildrenToTop](API/Data.md#setAdjustChildrenToTop)</font>
 
 #### setAnchor(x, y)
 
@@ -1961,9 +1869,9 @@ Inherited From:
         </tbody>
     </table>
 </div>  
-Inherited From:
 
-*   [hc.Node#setAnchor](hc.Node.hcml#setAnchor)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setAnchor](API/Node.md#setAnchor)</font>
 
 #### setAnchor3d(x, y, z)
 
@@ -2003,9 +1911,9 @@ Inherited From:
         </tbody>
     </table>
 </div>  
-Inherited From:
 
-*   [hc.Node#setAnchor3d](hc.Node.hcml#setAnchor3d)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setAnchor3d](API/Node.md#setAnchor3d)</font>
 
 #### setAnchorElevation(y)
 
@@ -2031,10 +1939,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setAnchorElevation](hc.Node.hcml#setAnchorElevation)
-
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setAnchorElevation](API/Node.md#setAnchorElevation)</font>
 #### setAnchorX(x)
 
 设置图元x轴方向的中心点比例
@@ -2059,9 +1966,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setAnchorX](hc.Node.hcml#setAnchorX)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setAnchorX](API/Node.md#setAnchorX)</font>
 
 #### setAnchorY(y)
 
@@ -2087,9 +1994,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setAnchorY](hc.Node.hcml#setAnchorY)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setAnchorY](API/Node.md#setAnchorY)</font>
 
 #### setAttr(name, value)
 
@@ -2122,9 +2029,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setAttr](hc.Data.hcml#setAttr)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setAttr](API/Data.md#setAttr)</font>
 
 #### setAttrObject(attrObject)
 
@@ -2150,9 +2057,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setAttrObject](hc.Data.hcml#setAttrObject)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setAttrObject](API/Data.md#setAttrObject)</font>
 
 #### setClickThroughEnabled(clickThroughEnabled)
 
@@ -2202,9 +2109,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setDisplayName](hc.Data.hcml#setDisplayName)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setDisplayName](API/Data.md#setDisplayName)</font>
 
 #### setElevation(elevation)
 
@@ -2230,9 +2137,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setElevation](hc.Node.hcml#setElevation)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setElevation](API/Node.md#setElevation)</font>
 
 #### setHeighc(heighc)
 
@@ -2258,9 +2165,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setHeighc](hc.Node.hcml#setHeighc)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setHeighc](API/Node.md#setHeighc)</font>
 
 #### setHost(data)
 
@@ -2286,10 +2193,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setHost](hc.Node.hcml#setHost)
-
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setHost](API/Node.md#setHost)</font>
 #### setIcon(icon)
 
 设置小图标名称，常作为TreeView和ListView等组件上的节点小图标
@@ -2314,9 +2220,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setIcon](hc.Data.hcml#setIcon)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setIcon](API/Data.md#setIcon)</font>
 
 #### setId(id)
 
@@ -2342,9 +2248,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setId](hc.Data.hcml#setId)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setId](API/Data.md#setId)</font>
 
 #### setImage(image)
 
@@ -2370,9 +2276,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setImage](hc.Node.hcml#setImage)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setImage](API/Node.md#setImage)</font>
 
 #### setLayer(layer)
 
@@ -2398,9 +2304,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setLayer](hc.Data.hcml#setLayer)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setLayer](API/Data.md#setLayer)</font>
 
 #### setName(name)
 
@@ -2426,9 +2332,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setName](hc.Data.hcml#setName)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setName](API/Data.md#setName)</font>
 
 #### setParent(parent)
 
@@ -2454,9 +2360,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setParent](hc.Data.hcml#setParent)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setParent](API/Data.md#setParent)</font>
 
 #### setPosition(x, y)
 
@@ -2489,9 +2395,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setPosition](hc.Node.hcml#setPosition)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setPosition](API/Node.md#setPosition)</font>
 
 #### setPosition3d(x, y, z)
 
@@ -2531,9 +2437,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setPosition3d](hc.Node.hcml#setPosition3d)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setPosition3d](API/Node.md#setPosition3d)</font>
 
 #### setRect(x, y, width, heighc)
 
@@ -2580,9 +2486,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setRect](hc.Node.hcml#setRect)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setRect](API/Node.md#setRect)</font>
 
 #### setRotation(rotation)
 
@@ -2608,9 +2514,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setRotation](hc.Node.hcml#setRotation)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setRotation](API/Node.md#setRotation)</font>
 
 #### setRotation3d(x, y, z)
 
@@ -2650,9 +2556,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setRotation3d](hc.Node.hcml#setRotation3d)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setRotation3d](API/Node.md#setRotation3d)</font>
 
 #### setRotationMode(rotationMode)
 
@@ -2685,13 +2591,12 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setRotationMode](hc.Node.hcml#setRotationMode)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setRotationMode](API/Node.md#setRotationMode)</font>
 
-See:
-
-*   [getRotationMode](hc.Node.hcml#getRotationMode)
+See:  
+&emsp;&emsp;<font color=Blue>[getRotationMode](API/Node.md#getRotationMode)</font>
 
 #### setRotationX(rotationX)
 
@@ -2717,9 +2622,9 @@ See:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setRotationX](hc.Node.hcml#setRotationX)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setRotationX](API/Node.md#setRotationX)</font>
 
 #### setRotationY(rotationY)
 
@@ -2745,10 +2650,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setRotationY](hc.Node.hcml#setRotationY)
-
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setRotationY](API/Node.md#setRotationY)</font>
 #### setRotationZ(rotationZ)
 
 设置图元在3D拓扑中沿z轴的旋转角度(弧度制)
@@ -2773,9 +2677,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setRotationZ](hc.Node.hcml#setRotationZ)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setRotationZ](API/Node.md#setRotationZ)</font>
 
 #### setScale(x, y)
 
@@ -2808,9 +2712,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setScale](hc.Node.hcml#setScale)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setScale](API/Node.md#setScale)</font>
 
 #### setScale3d(x, y, z)
 
@@ -2850,9 +2754,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setScale3d](hc.Node.hcml#setScale3d)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setScale3d](API/Node.md#setScale3d)</font>
 
 #### setScaleTall(y)
 
@@ -2878,9 +2782,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setScaleTall](hc.Node.hcml#setScaleTall)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setScaleTall](API/Node.md#setScaleTall)</font>
 
 #### setScaleX(x)
 
@@ -2905,10 +2809,10 @@ Inherited From:
             </tr>
         </tbody>
     </table>
-</div>
-Inherited From:
+</div>  
 
-*   [hc.Node#setScaleX](hc.Node.hcml#setScaleX)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setScaleX](API/Node.md#setScaleX)</font>
 
 #### setScaleY(y)
 
@@ -2934,9 +2838,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setScaleY](hc.Node.hcml#setScaleY)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setScaleY](API/Node.md#setScaleY)</font>
 
 #### setSize(width, heighc)
 
@@ -2969,9 +2873,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setSize](hc.Node.hcml#setSize)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setSize](API/Node.md#setSize)</font>
 
 #### setSize3d(width, tall, heighc)
 
@@ -3011,9 +2915,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#setSize3d](hc.Node.hcml#setSize3d)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setSize3d](API/Node.md#setSize3d)</font>
 
 #### setStyle(name, value)
 
@@ -3046,9 +2950,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setStyle](hc.Data.hcml#setStyle)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setStyle](API/Data.md#setStyle)</font>
 
 #### setSyncSize(clickThroughEnabled)
 
@@ -3076,7 +2980,7 @@ Inherited From:
 </div>
 #### setTag(tag)
 
-设置标识号，可通过[getDataByTag](hc.DataModel.hcml#getDataByTag)快速查找
+设置标识号，可通过[getDataByTag](API/DataModel.md#getDataByTag)快速查找
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>
@@ -3098,9 +3002,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setTag](hc.Data.hcml#setTag)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setTag](API/Data.md#setTag)</font>
 
 #### setTall() → {Number}
 
@@ -3108,11 +3012,10 @@ Inherited From:
 
 ##### Returns:
 
-Number - tall y轴方向的长度
+&emsp;&emsp;Number - tall y轴方向的长度
 
-Inherited From:
-
-*   [hc.Node#setTall](hc.Node.hcml#setTall)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setTall](API/Node.md#setTall)</font>
 
 #### setToolTip(toolTip)
 
@@ -3138,9 +3041,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Data#setToolTip](hc.Data.hcml#setToolTip)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#setToolTip](API/Data.md#setToolTip)</font>
 
 #### setWidth() → {Number}
 
@@ -3148,11 +3051,10 @@ Inherited From:
 
 #### Returns:
 
-Number - width x轴方向的长度
+&emsp;&emsp;Number - width x轴方向的长度
 
-Inherited From:
-
-*   [hc.Node#setWidth](hc.Node.hcml#setWidth)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#setWidth](API/Node.md#setWidth)</font>
 
 #### size() → {Number}
 
@@ -3160,15 +3062,14 @@ Inherited From:
 
 ##### Returns:
 
-Number - 孩子元素总数
+&emsp;&emsp;Number - 孩子元素总数
 
-Inherited From:
-
-*   [hc.Data#size](hc.Data.hcml#size)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#size](API/Data.md#size)</font>
 
 #### t3(tx, ty, tz)
 
-在当前坐标的基础上增加x、y、z三个方向的平移值，[translate3d](hc.Node.hcml#translate3d)的缩写
+在当前坐标的基础上增加x、y、z三个方向的平移值，[translate3d](API/Node.md#translate3d)的缩写
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>
@@ -3204,15 +3105,13 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#t3](hc.Node.hcml#t3)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#t3](API/Node.md#t3)</font>
+See:  
+&emsp;&emsp;<font color=Blue>[translate3d](API/Node.md#translate3d)</font>
 
-See:
-
-*   [translate3d](hc.Node.hcml#translate3d)
-
-#### toChildren(matchFunc, scope) → {[hc.List](hc.List.hcml)}
+#### toChildren(matchFunc, scope) → {[hc.List](API/List.md)}
 
 以matchFunc为过滤函数构建新的孩子元素集合
 <h5>Parameters:</h5>
@@ -3248,11 +3147,10 @@ See:
 </div>
 #### Returns:
 
-[hc.List](hc.List.hcml) - 孩子元素集合
+&emsp;&emsp;[hc.List](API/List.md) - 孩子元素集合
 
-Inherited From:
-
-*   [hc.Data#toChildren](hc.Data.hcml#toChildren)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#toChildren](API/Data.md#toChildren)</font>
 
 ##### Example
 
@@ -3268,11 +3166,10 @@ Inherited From:
 
 ##### Returns:
 
-String - 文字标签
+&emsp;&emsp;String - 文字标签
 
-Inherited From:
-
-*   [hc.Data#toLabel](hc.Data.hcml#toLabel)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Data#toLabel](API/Data.md#toLabel)</font>
 
 #### toString() → {String}
 
@@ -3280,11 +3177,10 @@ Inherited From:
 
 ##### Returns:
 
-String
+&emsp;&emsp;String
 
-Inherited From:
-
-*   [hc.Data#toString](hc.Data.hcml#toString)
+Inherited From:    
+&emsp;&emsp;<font color=Blue>[hc.Data#toString](API/Data.md#toString)</font>
 
 #### translate(tx, ty)
 
@@ -3317,13 +3213,13 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#translate](hc.Node.hcml#translate)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#translate](API/Node.md#translate)</font>
 
 #### translate3d(tx, ty, tz)
 
-在当前坐标的基础上增加x、y、z三个方向的平移值，[t3](hc.Node.hcml#t3)的缩写
+在当前坐标的基础上增加x、y、z三个方向的平移值，[t3](API/Node.md#t3)的缩写
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>
@@ -3359,13 +3255,12 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#translate3d](hc.Node.hcml#translate3d)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#translate3d](API/Node.md#translate3d)</font>
 
-See:
-
-*   [t3](hc.Node.hcml#t3)
+See:  
+&emsp;&emsp;<font color=Blue>[t3](API/Node.md#t3)</font>
 
 #### translate3dBy(direction, distance)
 
@@ -3398,9 +3293,9 @@ See:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#translate3dBy](hc.Node.hcml#translate3dBy)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#translate3dBy](API/Node.md#translate3dBy)</font>
 
 #### translateBack(distance)
 
@@ -3426,9 +3321,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#translateBack](hc.Node.hcml#translateBack)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#translateBack](API/Node.md#translateBack)</font>
 
 #### translateBottom(distance)
 
@@ -3454,9 +3349,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#translateBottom](hc.Node.hcml#translateBottom)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#translateBottom](API/Node.md#translateBottom)</font>
 
 #### translateFront(distance)
 
@@ -3482,9 +3377,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#translateFront](hc.Node.hcml#translateFront)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#translateFront](API/Node.md#translateFront)</font>
 
 #### translateLeft(distance)
 
@@ -3509,10 +3404,10 @@ Inherited From:
             </tr>
         </tbody>
     </table>
-</div>
-Inherited From:
+</div>  
 
-*   [hc.Node#translateLeft](hc.Node.hcml#translateLeft)
+Inherited From:    
+&emsp;&emsp;<font color=Blue>[hc.Node#translateLeft](API/Node.md#translateLeft)</font>
 
 #### translateRighc(distance)
 
@@ -3538,9 +3433,9 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#translateRighc](hc.Node.hcml#translateRighc)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#translateRighc](API/Node.md#translateRighc)</font>
 
 #### translateTop(distance)
 
@@ -3568,6 +3463,6 @@ Inherited From:
         </tbody>
     </table>
 </div>
-Inherited From:
 
-*   [hc.Node#translateTop](hc.Node.hcml#translateTop)
+Inherited From:  
+&emsp;&emsp;<font color=Blue>[hc.Node#translateTop](API/Node.md#translateTop)</font>
