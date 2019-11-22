@@ -1,7 +1,6 @@
+<h3>hc.widget.Toolbar(items)</h3>   
 
-[hc](hc.html)[.widget](hc.widget.html).Toolbar(items)
------------------------------------------------------
-
+---
 #### new Toolbar(items)
 
 工具条组件，提供按钮等组件的水平摆放功能

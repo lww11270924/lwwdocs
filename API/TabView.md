@@ -1,6 +1,6 @@
-[hc](hc.html)[.widget](hc.widget.html).TabView()
-------------------------------------------------
+<h3>hc.widget.TabView()</h3>   
 
+---
 #### new TabView()
 
 页签组件，以页签的方式呈现多组件，页签支持拖拽和关闭等功能

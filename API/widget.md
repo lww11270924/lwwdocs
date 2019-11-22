@@ -1,7 +1,6 @@
+<h3>hc.widget()</h3>   
 
-[hc](hc.hcml).widget
---------------------
-
+---
 通用组件包
 
 ### <span style='color:rgb(241,125,164)'>Classes</span>

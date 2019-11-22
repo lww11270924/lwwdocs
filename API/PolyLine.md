@@ -1,7 +1,6 @@
+<h3>hc.PolyLine()</h3>   
 
-[html](html.htmlml).PolyLine()
-------------------------
-
+---
 #### new PolyLine()
 
 支持{x: 10, y: 20, e: 30}格式的三维空间点描述，如果e值为空则取elevation的海拔值， 修改html.Polyline的elevation和tall值时，会自动调节points顶点中的e值； 同理points顶点信息变化也会同步修改html.Polyline的elevation和tall值。

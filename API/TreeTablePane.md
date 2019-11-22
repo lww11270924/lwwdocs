@@ -1,6 +1,6 @@
+<h3>hc.widget.TreeTablePane(treeTableView)</h3>   
 
-[hc](hc.html)[.widget](hc.widget.html).TreeTablePane(treeTableView)
--------------------------------------------------------------------
+---
 
 #### new TreeTablePane(treeTableView)
 

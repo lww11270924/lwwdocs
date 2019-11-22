@@ -1,7 +1,6 @@
+<h3>hc.SelectionModel()</h3>   
 
-[hc](hc.html).SelectionModel()
-------------------------------
-
+---
 #### new SelectionModel()
 
 选择模型管理DataModel模型中Data对象的选择状态，  

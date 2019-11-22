@@ -1,7 +1,6 @@
+<h3>hc.widget.TablePane(tableView)</h3>   
 
-[hc](hc.html)[.widget](hc.widget.html).TablePane(tableView)
------------------------------------------------------------
-
+---
 #### new TablePane(tableView)
 
 表格面板，组合了TableHeader和TableView两个子组件

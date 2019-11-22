@@ -1,7 +1,6 @@
+<h3>hc.Notifier()</h3>   
 
-[hc](hc.html).Notifier()
-------------------------
-
+---
 #### new Notifier()
 
 事件派发器

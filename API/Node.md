@@ -129,7 +129,7 @@ Inherited From:
 
 *   [hc.Data#fp](hc.Data.html#fp)
 
-#### getAgentEdges() → {[hc.List](hc.List.html)}
+#### <b>getAgentEdges()</b> → {[hc.List](hc.List.html)}
 
 获取当前图元代理的连线集合
 

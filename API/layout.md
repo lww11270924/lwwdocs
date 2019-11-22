@@ -1,7 +1,6 @@
+<h3>hc.layout</h3>   
 
-[hc](hc.html).layout
---------------------
-
+---
 布局组件包
 
 ### Classes

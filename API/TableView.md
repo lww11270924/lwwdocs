@@ -1,7 +1,6 @@
+<h3>hc.widget.TableView(dataModel)</h3>   
 
-[hc](hc.html)[.widget](hc.widget.html).TableView(dataModel)
------------------------------------------------------------
-
+---
 #### new TableView(dataModel)
 
 表格组件，以表格的方式呈现DataModel中Data的属性

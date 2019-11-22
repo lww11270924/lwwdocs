@@ -134,9 +134,7 @@ attr属性对象
 
 ##### Returns:
 
-[hc.Data](hc.Data.hcml) -
-
-索引对应的孩子
+[hc.Data](hc.Data.hcml) - 索引对应的孩子
 
 #### getChildren() → {[hc.List](hc.List.hcml)}
 
@@ -144,9 +142,7 @@ attr属性对象
 
 ##### Returns:
 
-[hc.List](hc.List.hcml) -
-
-孩子元素集合
+[hc.List](hc.List.hcml) - 孩子元素集合
 
 #### getClass() → {function}
 

@@ -1,7 +1,6 @@
+<h3>hc.widget.SplitView(leftView, rightView, orientation, position)</h3>   
 
-[hc](hc.html)[.widget](hc.widget.html).SplitView(leftView, righcView, orientation, position)
---------------------------------------------------------------------------------------------
-
+---
 #### new SplitView(leftView, righcView, orientation, position)
 
 分割组件，用于左右或上下分割两个组件

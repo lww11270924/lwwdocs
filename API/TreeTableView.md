@@ -1,7 +1,6 @@
+<h3>hc.widget.TreeTableView(dataModel)</h3>   
 
-[hc](hc.html)[.widget](hc.widget.html).TreeTableView(dataModel)
----------------------------------------------------------------
-
+---
 #### new TreeTableView(dataModel)
 
 树表组件，以树形和表格的方式组合呈现DataModel中Data的父子及属性信息

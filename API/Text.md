@@ -1,7 +1,6 @@
+<h3>hc.Text()</h3>   
 
-[hc](hc.html).Text()
---------------------
-
+---
 #### new Text()
 
 拓扑文本类型, 继承hc.Node, 没有额外API，通过[setStyle](hc.Text.html#setStyle)设置内容和样式

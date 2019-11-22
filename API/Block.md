@@ -1,4 +1,5 @@
-[hc](API/hc.md).Block()
+<h3>hc.Block()</h3>   
+
 ---
 > <h3>new Block()</h3>
 > 块节点类型，本身不绘制任何内容，用于作为其它的父节点，可以与子节点同步大小，当它隐藏|显示时，所有孩子节点都会跟着隐藏|显示
@@ -7,8 +8,8 @@
 &emsp;&emsp;<font color=Blue>[hc.Node](API/Node.md)</font>  
 ### <font color="#F17DA4">Methods</font>  
 ---
-#### <b>a</b>(name, value) → {Object}  
-获取或设置attr属性，仅有一个参数时相当于[getAttr](API/Data.md#getAttr)，有两个参数时相当于[setAttr](API/Data.md#setAttr)
+#### <div style="width:100%;background-color:#f4f7f8"><b>a</b>(name, value) → {Object}<div> 
+获取或设置attr属性，仅有一个参数时相当于[getAttr](API/Data.md#getAttr)，有两个参数时相当于[setAttr](API/Data.md#setattrname-value)
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>
@@ -43,8 +44,8 @@
 </div>
 
 Inherited From:  
-&emsp;&emsp;<font color=Blue>[hc.Data#a](API/Data.md#a)</font>  
-#### <b>addChild</b>(child, index)
+&emsp;&emsp;<font color=Blue>[hc.Data#a](API/Data.md#aname-value-→-object)</font>  
+#### <div style="width:100%;background-color:#f4f7f8"><b>addChild</b>(child, index)</div>
 添加孩子节点，index为孩子插入索引，为空则插入作为最后的孩子，内部会自动调用child的setParent
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
@@ -80,9 +81,9 @@ Inherited From:
 </div>
 
 Inherited From:  
-&emsp;&emsp;<font color=Blue>[hc.Data#addChild](API/Data.md#addChild)</font>  
+&emsp;&emsp;<font color=Blue>[hc.Data#addChild](API/Data.md#addchildchild-index)</font>  
 
-#### <b>addStyleIcon</b>(name, icon)
+#### <div style="width:100%;background-color:#f4f7f8"><b>addStyleIcon</b>(name, icon)</div>
 
 增加icon，icon参数请参考beginner guide
 <h5>Parameters:</h5>
@@ -115,7 +116,7 @@ Inherited From:
 </div>
 
 Inherited From:  
-&emsp;&emsp;<font color=Blue>[hc.Data#addStyleIcon](API/Data.md#addStyleIcon)</font>  
+&emsp;&emsp;<font color=Blue>[hc.Data#addStyleIcon](API/Data.md#addstyleiconname-icon)</font>  
 
 ##### Example
 ```
@@ -127,13 +128,13 @@ data.addStyleIcon("arrow1", {
     names: ['arrow']
 });
 ```
-#### <b>clearChildren()</b>
+#### <div style="width:100%;background-color:#f4f7f8"><b>clearChildren()</b></div>
 
 删除所有孩子节点，内部会自动调用setParent  
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#clearChildren](API/Data.md#clearChildren)</font>  
 
-#### <b>dm()</b> → {[hc.DataModel](API/DataModel.md)}
+#### <div style="width:100%;background-color:#f4f7f8"><b>dm()</b> → {[hc.DataModel](API/DataModel.md)}</div>
 
 获取[DataModel](hc.DataModel.md)，[getDataModel](API/Data.md#getDataModel)的缩写
 
@@ -144,7 +145,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#dm](API/Data.md#dm)</font> 
 
-#### <b>eachChild</b>(func, scope)
+#### <div style="width:100%;background-color:#f4f7f8"><b>eachChild</b>(func, scope)<div>
 
 遍历孩子元素
 <h5>Parameters:</h5>
@@ -293,7 +294,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getAgentEdges](API/Node.md#getAgentEdges)</font>
 
-#### getAttaches() → {[hc.List](API/List.md)}
+#### <b>getAttaches()</b> → {[hc.List](API/List.md)}
 
 获取吸附到自身的所有图元
 
@@ -368,6 +369,7 @@ Inherited From:
         </tbody>
     </table>
 </div>
+
 #### Returns:
 
 &emsp;&emsp;[hc.Data](API/Data.md) - 索引对应的孩子
@@ -567,7 +569,7 @@ Inherited From:
  
 Default Value:
 
-*   0
+&emsp;&emsp;0
 
 #### <b>getLoopedEdges()</b> → {[hc.List](API/List.md)}
 
@@ -685,7 +687,7 @@ Inherited From:
 See:  
 &emsp;&emsp;<font color=Blue>[setRotationMode](API/Node.md#setRotationMode)</font>
 
-#### getRotationX() → {Number}
+#### <b>getRotationX()</b> → {Number}
 
 获取图元在3d拓扑中沿x轴的旋转角度(弧度制)
 
@@ -696,7 +698,7 @@ See:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getRotationX](API/Node.md#getRotationX)</font>
 
-#### getRotationY() → {Number}
+#### <b>getRotationY()</b> → {Number}
 
 获取图元在3d拓扑中沿y轴的旋转角度(弧度制)
 
@@ -707,7 +709,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getRotationY](API/Node.md#getRotationY)</font>
 
-#### getRotationZ() → {Number}
+#### <b>getRotationZ()</b> → {Number}
 
 获取图元在3d拓扑中沿z轴的旋转角度(弧度制)
 
@@ -718,7 +720,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getRotationZ](API/Node.md#getRotationZ)</font>
 
-#### getScale() → {Object}
+#### <b>getScale()</b> → {Object}
 
 获取图元在2D拓扑中的缩放值
 
@@ -737,7 +739,7 @@ Inherited From:
     	y: 1
     }
 
-#### getScale3d() → {Array}
+#### <b>getScale3d()</b> → {Array}
 
 获取图元在3D拓扑中的缩放值
 
@@ -748,7 +750,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getScale3d](API/Node.md#getScale3d)</font>
 
-#### getScaleTall() → {Number}
+#### <b>getScaleTall()</b> → {Number}
 
 获取图元在3D拓扑中y轴方向的缩放值
 
@@ -759,7 +761,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getScaleTall](API/Node.md#getScaleTall)</font>
 
-#### getScaleX() → {Number}
+#### <b>getScaleX()</b> → {Number}
 
 获取图元在2D拓扑中x轴方向的缩放值
 
@@ -770,7 +772,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getScaleX](API/Node.md#getScaleX)</font>
 
-#### getScaleY() → {Number}
+#### <b>getScaleY()</b> → {Number}
 
 设置图元在2D拓扑中y轴方向的缩放值
 
@@ -781,7 +783,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getScaleY](API/Node.md#getScaleY)</font>
 
-#### getSerializableAttrs() → {Object}
+#### <b>getSerializableAttrs()</b> → {Object}
 
 此函数返回一个map，决定序列化时哪些attr属性可被序列化，默认所有attr对象里的属性都会被序列化
 
@@ -802,7 +804,7 @@ Inherited From:
         return map;
     }
 
-#### getSerializableProperties() → {Object}
+#### <b>getSerializableProperties()</b> → {Object}
 
 此函数返回一个map，决定序列化时哪些属性可被序列化，如果有自定义的get/set属性并且需要序列化，应该重写此方法
 
@@ -828,7 +830,7 @@ Inherited From:
         };
     }
 
-#### getSerializableStyles() → {Object}
+#### <b>getSerializableStyles()</b> → {Object}
 
 此函数返回一个map，决定序列化时哪些样式可被序列化，默认所有样式都会被序列化
 
@@ -848,7 +850,7 @@ Inherited From:
         return map;
     }
 
-#### getSize() → {Object}
+#### <b>getSize()</b> → {Object}
 
 获取图元在2D拓扑中的尺寸(宽高)
 
@@ -867,7 +869,7 @@ Inherited From:
     	heighc: 100
     }
 
-#### getSize3d() → {Array}
+#### <b>getSize3d()</b> → {Array}
 
 获取图元在3D拓扑中的尺寸(长宽高)
 
@@ -878,7 +880,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getSize3d](API/Node.md#getSize3d)</font> 
 
-#### getSourceAgentEdges() → {[hc.List](API/List.md)}
+#### <b>getSourceAgentEdges()</b> → {[hc.List](API/List.md)}
 
 获取代理的起始于该图元的连线
 
@@ -888,7 +890,7 @@ Inherited From:
 
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getSourceAgentEdges](API/Node.md#getSourceAgentEdges)</font> 
-#### getSourceEdges() → {[hc.List](API/List.md)}
+#### <b>getSourceEdges()</b> → {[hc.List](API/List.md)}
 
 获取跟图元关联的并起始于该图元的连线(不包括代理的连线)
 
@@ -899,7 +901,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getSourceEdges](API/Node.md#getSourceEdges)</font> 
 
-#### getStyle(name) → {Object}
+#### <b>getStyle(name)</b> → {Object}
 
 获取样式属性
 <h5>Parameters:</h5>
@@ -931,7 +933,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#getStyle](API/Data.md#getStyle)</font> 
 
-#### getStyleMap() → {Object}
+#### <b>getStyleMap()</b> → {Object}
 
 获取图元内部样式映射信息
 
@@ -942,7 +944,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#getStyleMap](API/Data.md#getStyleMap)</font> 
 
-#### getSuperClass() → {function}
+#### <b>getSuperClass()</b> → {function}
 
 获取父类声明(构造函数)，继承类时可以用来调用父类构造或函数
 
@@ -965,7 +967,7 @@ Inherited From:
        }
     });
 
-#### getTag() → {String}
+#### <b>getTag()</b> → {String}
 
 获取标识号，可通过[getDataByTag](API/DataModel.md#getDataByTag)快速查找
 
@@ -976,7 +978,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#getTag](API/Data.md#getTag)</font> 
 
-#### getTall() → {Number}
+#### <b>getTall()</b> → {Number}
 
 获取图元在3D拓扑中的y轴长度
 
@@ -987,7 +989,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getTall](API/Node.md#getTall)</font> 
 
-#### getTargetAgentEdges() → {[hc.List](API/List.md)}
+#### <b>getTargetAgentEdges()</b> → {[hc.List](API/List.md)}
 
 获取图元代理的结束于该图元的连线
 
@@ -998,7 +1000,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getTargetAgentEdges](API/Node.md#getTargetAgentEdges)</font> 
 
-#### getTargetEdges() → {[hc.List](API/List.md)}
+#### <b>getTargetEdges()</b> → {[hc.List](API/List.md)}
 
 获取跟图元关联的并结束于该图元的连线(不包括代理的连线)
 
@@ -1009,7 +1011,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getTargetEdges](API/Node.md#getTargetEdges)</font> 
 
-#### getToolTip() → {String}
+#### <b>getToolTip()</b> → {String}
 
 获取文字提示信息
 
@@ -1020,7 +1022,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#getToolTip](API/Data.md#getToolTip)</font> 
 
-#### getUIClass() → {function}
+#### <b>getUIClass()</b> → {function}
 
 获取拓扑组件上的UI类
 
@@ -1031,7 +1033,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#getUIClass](API/Data.md#getUIClass)</font> 
 
-#### getWidth() → {Number}
+#### <b>getWidth()</b> → {Number}
 
 获取图元在2D拓扑中的宽度，或在3D拓扑中x轴的长度
 
@@ -1042,7 +1044,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#getWidth](API/Node.md#getWidth)</font> 
 
-#### handleHostPropertyChange(event)
+#### <b>handleHostPropertyChange</b>(event)
 
 当吸附宿主对象属性发生变化时回调该函数，可重载做后续处理
 <h5>Parameters:</h5>
@@ -1070,7 +1072,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#handleHostPropertyChange](API/Node.md#handleHostPropertyChange)</font> 
 
-#### hasAgentEdges() → {Boolean}
+#### <b>hasAgentEdges()</b> → {Boolean}
 
 判断当前图元上是否有代理连线
 
@@ -1081,7 +1083,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#hasAgentEdges](API/Node.md#hasAgentEdges)</font> 
 
-#### hasChildren() → {Boolean}
+#### <b>hasChildren()</b> → {Boolean}
 
 判断是否有孩子
 
@@ -1092,14 +1094,14 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#hasChildren](API/Data.md#hasChildren)</font> 
 
-#### invalidate()
+#### <b>invalidate()</b>
 
 强制触发属性变化事件通知界面更新
 
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#invalidate](API/Data.md#invalidate)</font> 
 
-#### isAdjustChildrenToTop() → {Boolean}
+#### <b>isAdjustChildrenToTop()</b> → {Boolean}
 
 GraphView点击图元会自动sendToTop，该属性决定是否对子图元也进行sendToTop操作
 
@@ -1110,7 +1112,7 @@ GraphView点击图元会自动sendToTop，该属性决定是否对子图元也�
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#isAdjustChildrenToTop](API/Data.md#isAdjustChildrenToTop)</font> 
 
-#### isClickThroughEnabled() → {Boolean}
+#### <b>isClickThroughEnabled()</b> → {Boolean}
 
 获取块节点是否可以点击穿透
 
@@ -1150,7 +1152,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#isDescendantOf](API/Data.md#isDescendantOf)</font> 
 
-#### isEmpty() → {Boolean}
+#### <b>isEmpty()</b> → {Boolean}
 
 判断是否有孩子，同[hasChildren](API/Data.md#hasChildren)
 
@@ -1161,7 +1163,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#isEmpty](API/Data.md#isEmpty)</font> 
 
-#### isHostOn(node) → {Boolean}
+#### <b>isHostOn</b>(node) → {Boolean}
 
 判断当前图元是否吸附到指定图元对象上
 <h5>Parameters:</h5>
@@ -1192,7 +1194,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#isHostOn](API/Node.md#isHostOn)</font> 
 
-#### isParentOf(data) → {Boolean}
+#### <b>isParentOf</b>(data) → {Boolean}
 
 判断自身是否为指定data的父亲
 <h5>Parameters:</h5>
@@ -1263,14 +1265,14 @@ Inherited From:
 
 &emsp;&emsp;Boolean
 
-#### iv()
+#### <b>iv()</b>
 
 强制触发属性变化事件通知界面更新，[invalidate](API/Data.md#invalidate)的缩写
 
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#iv](API/Data.md#iv)</font> 
 
-#### onChildAdded(child, index)
+#### <b>onChildAdded</b>(child, index)
 
 添加孩子时的回调函数，可重载做后续处理
 <h5>Parameters:</h5>
@@ -1305,7 +1307,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#onChildAdded](API/Data.md#onChildAdded)</font> 
 
-#### onChildRemoved(child, index)
+#### <b>onChildRemoved</b>(child, index)
 
 删除孩子时的回调函数，可重载做后续处理
 <h5>Parameters:</h5>
@@ -1340,7 +1342,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#onChildRemoved](API/Data.md#onChildRemoved)</font> 
 
-#### onHostChanged(oldHost, newHost)
+#### <b>onHostChanged</b>(oldHost, newHost)
 
 当吸附的宿主对象发生变化时回调该函数，可重载做后续处理
 <h5>Parameters:</h5>
@@ -1409,7 +1411,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#onParentChanged](API/Data.md#onParentChanged)</font> 
 
-#### onPropertyChanged(event)
+#### <b>onPropertyChanged</b>(event)
 
 属性变化回调函数，可重载做后续处理
 <h5>Parameters:</h5>
@@ -1447,7 +1449,7 @@ Inherited From:
     	data: data//发生变化的data
     }
 
-#### onStyleChanged(name, oldValue, newValue)
+#### <b>onStyleChanged</b>(name, oldValue, newValue)
 
 样式属性变化时会回调该函数，可重载做后续处理
 <h5>Parameters:</h5>
@@ -1489,7 +1491,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#onStyleChanged](API/Data.md#onStyleChanged)</font> 
 
-#### p(x, y) → {Object}
+#### <b>p(x, y)</b> → {Object}
 
 获取或设置设置图元中心点坐标，有参数时相当于[setPosition](hc.Node.md#setPosition)，没有参数时相当于[getPosition](hc.Node.md#getPosition)
 <h5>Parameters:</h5>
@@ -1532,7 +1534,7 @@ Inherited From:
 See:  
 &emsp;&emsp;<font color=Blue>[setPosition](API/Node.md#setPosition)</font> 
 
-#### p3(x, y, z) → {Array}
+#### <b>p3(x, y, z)</b> → {Array}
 
 获取或设置图元中心点在3D拓扑中的三维坐标，有三个参数时相当于[setPosition3d](API/Node.md#setPosition3d)，没有参数时相当于[getPosition3d](API/Node.md#getPosition3d)
 <h5>Parameters:</h5>
@@ -1585,7 +1587,7 @@ Inherited From:
 See:  
 &emsp;&emsp;<font color=Blue>[setPosition3d](API/Node.md#setPosition3d)</font> 
 
-#### r3(rotationX, rotationY, rotationZ) → {Array}
+#### <b>r3</b>(rotationX, rotationY, rotationZ) → {Array}
 
 获取或设置图元在3D拓扑中的三维旋转角度，有三个参数时相当于[setRotation3d](API/Node.md#setRotation3d)，没有参数时相当于[getRotation3d](API/Node.md#getRotation3d)
 <h5>Parameters:</h5>
@@ -1637,7 +1639,7 @@ Inherited From:
 See:  
 &emsp;&emsp;<font color=Blue>[setRotation3d](API/Node.md#setRotation3d)</font> 
 
-#### removeChild(child)
+#### <b>removeChild</b>(child)
 
 删除指定孩子元素，内部会自动调用孩子元素的setParent
 
@@ -1648,7 +1650,7 @@ See:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#removeChild](API/Data.md#removeChild)</font> 
 
-#### removeStyleIcon(name)
+#### <b>removeStyleIcon</b>(name)
 
 删除icon
 <h5>Parameters:</h5>
@@ -1676,7 +1678,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#removeStyleIcon](API/Data.md#removeStyleIcon)</font> 
 
-#### rotateAt(x, y, angle)
+#### <b>rotateAt</b>(x, y, angle)
 
 以指定的坐标为中心旋转图元
 <h5>Parameters:</h5>
@@ -1718,7 +1720,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#rotateAt](API/Node.md#rotateAt)</font> 
 
-#### s(name, value) → {Object}
+#### <b>s</b>(name, value) → {Object}
 
 获取或设置样式，仅有一个参数时相当于[getStyle](API/Data.md#getStyle)，有两个参数时相当于[setStyle](API/Data.md#setStyle)
 <h5>Parameters:</h5>
@@ -1761,7 +1763,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#s](API/Data.md#s)</font> 
 
-#### s3(width, tall, heighc) → {Array}
+#### <b>s3</b>(width, tall, heighc) → {Array}
 
 获取或设置图元在3D拓扑中的尺寸，有三个参数时相当于[setSize3d](API/Node.md#setSize3d)，没有参数时相当于[getSize3d](API/Node.md#getSize3d)
 <h5>Parameters:</h5>
@@ -1810,7 +1812,7 @@ Inherited From:
 See:  
 &emsp;&emsp;<font color=Blue>[setSize3d](API/Node.md#setSize3d)</font>  
 
-#### setAdjustChildrenToTop(adjustToTop)
+#### <b>setAdjustChildrenToTop</b>(adjustToTop)
 
 GraphView点击图元会自动sendToTop，该属性决定是否对子图元也进行sendToTop操作
 <h5>Parameters:</h5>
@@ -1838,7 +1840,7 @@ GraphView点击图元会自动sendToTop，该属性决定是否对子图元也�
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setAdjustChildrenToTop](API/Data.md#setAdjustChildrenToTop)</font>
 
-#### setAnchor(x, y)
+#### <b>setAnchor</b>(x, y)
 
 设置图元中心点
 <h5>Parameters:</h5>
@@ -1873,7 +1875,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setAnchor](API/Node.md#setAnchor)</font>
 
-#### setAnchor3d(x, y, z)
+#### <b>setAnchor3d</b>(x, y, z)
 
 设置图元在3D坐标系中的中心点
 <h5>Parameters:</h5>
@@ -1915,7 +1917,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setAnchor3d](API/Node.md#setAnchor3d)</font>
 
-#### setAnchorElevation(y)
+#### <b>setAnchorElevation</b>(y)
 
 设置图元在3D坐标系中的y轴方向的中心点比例
 <h5>Parameters:</h5>
@@ -1942,7 +1944,7 @@ Inherited From:
 
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setAnchorElevation](API/Node.md#setAnchorElevation)</font>
-#### setAnchorX(x)
+#### <b>setAnchorX</b>(x)
 
 设置图元x轴方向的中心点比例
 <h5>Parameters:</h5>
@@ -1970,7 +1972,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setAnchorX](API/Node.md#setAnchorX)</font>
 
-#### setAnchorY(y)
+#### <b>setAnchorY</b>(y)
 
 设置图元y轴方向的中心点比例
 <h5>Parameters:</h5>
@@ -1998,7 +2000,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setAnchorY](API/Node.md#setAnchorY)</font>
 
-#### setAttr(name, value)
+#### <b>setAttr</b>(name, value)
 
 设置attr属性
 <h5>Parameters:</h5>
@@ -2033,7 +2035,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setAttr](API/Data.md#setAttr)</font>
 
-#### setAttrObject(attrObject)
+#### <b>setAttrObject</b>(attrObject)
 
 设置attr属性对象，该属性默认为空，用于存储用户业务信息
 <h5>Parameters:</h5>
@@ -2061,7 +2063,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setAttrObject](API/Data.md#setAttrObject)</font>
 
-#### setClickThroughEnabled(clickThroughEnabled)
+#### <b>setClickThroughEnabled</b>(clickThroughEnabled)
 
 设置块节点是否可以点击穿透（选中 block 前提下，再次点击可以选中子节点）
 <h5>Parameters:</h5>
@@ -2085,7 +2087,8 @@ Inherited From:
         </tbody>
     </table>
 </div>
-#### setDisplayName(displayName)
+
+#### <b>setDisplayName</b>(displayName)
 
 设置显示名称，常作为Column和Property的列头和属性名称显示
 <h5>Parameters:</h5>
@@ -2113,7 +2116,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setDisplayName](API/Data.md#setDisplayName)</font>
 
-#### setElevation(elevation)
+#### <b>setElevation</b>(elevation)
 
 设置图元中心在3D坐标系中的y坐标
 <h5>Parameters:</h5>
@@ -2141,7 +2144,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setElevation](API/Node.md#setElevation)</font>
 
-#### setHeighc(heighc)
+#### <b>setHeighc</b>(heighc)
 
 设置图元在2D拓扑中的高度，或3D拓扑中的z轴长度
 <h5>Parameters:</h5>
@@ -2169,7 +2172,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setHeighc](API/Node.md#setHeighc)</font>
 
-#### setHost(data)
+#### <b>setHost</b>(data)
 
 设置宿主图元，当图元吸附上宿主图元时，宿主移动或旋转时会带动所有吸附者
 <h5>Parameters:</h5>
@@ -2196,7 +2199,7 @@ Inherited From:
 
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setHost](API/Node.md#setHost)</font>
-#### setIcon(icon)
+#### <b>setIcon</b>(icon)
 
 设置小图标名称，常作为TreeView和ListView等组件上的节点小图标
 <h5>Parameters:</h5>
@@ -2224,7 +2227,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setIcon](API/Data.md#setIcon)</font>
 
-#### setId(id)
+#### <b>setId</b>(id)
 
 设置唯一编号，如果手工设置，一定要确保在data加入到DataModel之前设置并且唯一不重复
 <h5>Parameters:</h5>
@@ -2252,7 +2255,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setId](API/Data.md#setId)</font>
 
-#### setImage(image)
+#### <b>setImage</b>(image)
 
 设置拓扑上展现的图片信息，在GraphView拓扑图中图片一般以position为中心绘制
 <h5>Parameters:</h5>
@@ -2280,7 +2283,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setImage](API/Node.md#setImage)</font>
 
-#### setLayer(layer)
+#### <b>setLayer</b>(layer)
 
 设置数据元素在GraphView组件中的图层位置
 <h5>Parameters:</h5>
@@ -2308,7 +2311,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setLayer](API/Data.md#setLayer)</font>
 
-#### setName(name)
+#### <b>setName</b>(name)
 
 设置数据元素名称
 <h5>Parameters:</h5>
@@ -2336,7 +2339,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setName](API/Data.md#setName)</font>
 
-#### setParent(parent)
+#### <b>setParent</b>(parent)
 
 设置父元素
 <h5>Parameters:</h5>
@@ -2364,7 +2367,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setParent](API/Data.md#setParent)</font>
 
-#### setPosition(x, y)
+#### <b>setPosition</b>(x, y)
 
 设置图元中心点坐标
 <h5>Parameters:</h5>
@@ -2399,7 +2402,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setPosition](API/Node.md#setPosition)</font>
 
-#### setPosition3d(x, y, z)
+#### <b>setPosition3d</b>(x, y, z)
 
 设置图元中心点在3D拓扑中的三维坐标
 <h5>Parameters:</h5>
@@ -2441,7 +2444,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setPosition3d](API/Node.md#setPosition3d)</font>
 
-#### setRect(x, y, width, heighc)
+#### <b>setRect</b>(x, y, width, heighc)
 
 设置图元矩形区域
 <h5>Parameters:</h5>
@@ -2490,7 +2493,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setRect](API/Node.md#setRect)</font>
 
-#### setRotation(rotation)
+#### <b>setRotation</b>(rotation)
 
 设置图元的旋转角度，围绕中心点顺时针旋转
 <h5>Parameters:</h5>
@@ -2518,7 +2521,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setRotation](API/Node.md#setRotation)</font>
 
-#### setRotation3d(x, y, z)
+#### <b>setRotation3d</b>(x, y, z)
 
 设置图元在3D拓扑中的三维旋转角度
 <h5>Parameters:</h5>
@@ -2560,7 +2563,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setRotation3d](API/Node.md#setRotation3d)</font>
 
-#### setRotationMode(rotationMode)
+#### <b>setRotationMode</b>(rotationMode)
 
 设置三维旋转模式  
   
@@ -2598,7 +2601,7 @@ Inherited From:
 See:  
 &emsp;&emsp;<font color=Blue>[getRotationMode](API/Node.md#getRotationMode)</font>
 
-#### setRotationX(rotationX)
+#### <b>setRotationX</b>(rotationX)
 
 设置图元在3D拓扑中沿x轴的旋转角度(弧度制)
 <h5>Parameters:</h5>
@@ -2626,7 +2629,7 @@ See:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setRotationX](API/Node.md#setRotationX)</font>
 
-#### setRotationY(rotationY)
+#### <b>setRotationY</b>(rotationY)
 
 设置图元在3D拓扑中沿y轴的旋转角度(弧度制)
 <h5>Parameters:</h5>
@@ -2653,7 +2656,7 @@ Inherited From:
 
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setRotationY](API/Node.md#setRotationY)</font>
-#### setRotationZ(rotationZ)
+#### <b>setRotationZ</b>(rotationZ)
 
 设置图元在3D拓扑中沿z轴的旋转角度(弧度制)
 <h5>Parameters:</h5>
@@ -2681,7 +2684,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setRotationZ](API/Node.md#setRotationZ)</font>
 
-#### setScale(x, y)
+#### <b>setScale</b>(x, y)
 
 设置图元在2D拓扑中的缩放值
 <h5>Parameters:</h5>
@@ -2716,7 +2719,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setScale](API/Node.md#setScale)</font>
 
-#### setScale3d(x, y, z)
+#### <b>setScale3d</b>(x, y, z)
 
 设置图元在3D拓扑中的缩放值
 <h5>Parameters:</h5>
@@ -2758,7 +2761,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setScale3d](API/Node.md#setScale3d)</font>
 
-#### setScaleTall(y)
+#### <b>setScaleTall</b>(y)
 
 设置图元在3D拓扑中y轴方向的缩放值
 <h5>Parameters:</h5>
@@ -2786,7 +2789,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setScaleTall](API/Node.md#setScaleTall)</font>
 
-#### setScaleX(x)
+#### <b>setScaleX</b>(x)
 
 设置图元在2D拓扑中x轴方向的缩放值
 <h5>Parameters:</h5>
@@ -2814,7 +2817,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setScaleX](API/Node.md#setScaleX)</font>
 
-#### setScaleY(y)
+#### <b>setScaleY</b>(y)
 
 设置图元在2D拓扑中y轴方向的缩放值
 <h5>Parameters:</h5>
@@ -2842,7 +2845,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setScaleY](API/Node.md#setScaleY)</font>
 
-#### setSize(width, heighc)
+#### <b>setSize</b>(width, heighc)
 
 设置图元在2D拓扑中的尺寸(宽高)
 <h5>Parameters:</h5>
@@ -2877,7 +2880,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setSize](API/Node.md#setSize)</font>
 
-#### setSize3d(width, tall, heighc)
+#### <b>setSize3d</b>(width, tall, heighc)
 
 设置图元在3D拓扑中的尺寸
 <h5>Parameters:</h5>
@@ -2919,7 +2922,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setSize3d](API/Node.md#setSize3d)</font>
 
-#### setStyle(name, value)
+#### <b>setStyle</b>(name, value)
 
 设置样式
 <h5>Parameters:</h5>
@@ -2954,7 +2957,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setStyle](API/Data.md#setStyle)</font>
 
-#### setSyncSize(clickThroughEnabled)
+#### <b>setSyncSize</b>(clickThroughEnabled)
 
 设置块节点是否同步子节点大小
 <h5>Parameters:</h5>
@@ -2978,7 +2981,8 @@ Inherited From:
         </tbody>
     </table>
 </div>
-#### setTag(tag)
+
+#### <b>setTag</b>(tag)
 
 设置标识号，可通过[getDataByTag](API/DataModel.md#getDataByTag)快速查找
 <h5>Parameters:</h5>
@@ -3006,7 +3010,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setTag](API/Data.md#setTag)</font>
 
-#### setTall() → {Number}
+#### <b>setTall()</b> → {Number}
 
 设置图元在3D拓扑中的y轴方向的长度
 
@@ -3017,7 +3021,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setTall](API/Node.md#setTall)</font>
 
-#### setToolTip(toolTip)
+#### <b>setToolTip</b>(toolTip)
 
 设置文字提示信息
 <h5>Parameters:</h5>
@@ -3045,7 +3049,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#setToolTip](API/Data.md#setToolTip)</font>
 
-#### setWidth() → {Number}
+#### <b>setWidth()</b> → {Number}
 
 设置图元在3D拓扑中的x轴方向的长度
 
@@ -3056,7 +3060,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#setWidth](API/Node.md#setWidth)</font>
 
-#### size() → {Number}
+#### <b>size()</b> → {Number}
 
 获取孩子元素总数
 
@@ -3067,7 +3071,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#size](API/Data.md#size)</font>
 
-#### t3(tx, ty, tz)
+#### <b>t3</b>(tx, ty, tz)
 
 在当前坐标的基础上增加x、y、z三个方向的平移值，[translate3d](API/Node.md#translate3d)的缩写
 <h5>Parameters:</h5>
@@ -3107,11 +3111,11 @@ Inherited From:
 </div>
 
 Inherited From:  
-&emsp;&emsp;<font color=Blue>[hc.Node#t3](API/Node.md#t3)</font>
+&emsp;&emsp;<font color=Blue>[hc.Node#t3](API/Node.md#t3)</font>  
 See:  
 &emsp;&emsp;<font color=Blue>[translate3d](API/Node.md#translate3d)</font>
 
-#### toChildren(matchFunc, scope) → {[hc.List](API/List.md)}
+#### <b>toChildren</b>(matchFunc, scope) → {[hc.List](API/List.md)}
 
 以matchFunc为过滤函数构建新的孩子元素集合
 <h5>Parameters:</h5>
@@ -3160,7 +3164,7 @@ Inherited From:
        }
     });
 
-#### toLabel() → {String}
+#### <b>toLabel()</b> → {String}
 
 返回值作为TreeView和GraphView等组件上的图元文字标签，默认返回displayName||name信息
 
@@ -3171,7 +3175,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Data#toLabel](API/Data.md#toLabel)</font>
 
-#### toString() → {String}
+#### <b>toString()</b> → {String}
 
 重写js默认的toString
 
@@ -3182,7 +3186,7 @@ Inherited From:
 Inherited From:    
 &emsp;&emsp;<font color=Blue>[hc.Data#toString](API/Data.md#toString)</font>
 
-#### translate(tx, ty)
+#### <b>translate</b>(tx, ty)
 
 在当前坐标的基础上增加x、y两个方向的平移值
 <h5>Parameters:</h5>
@@ -3217,7 +3221,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#translate](API/Node.md#translate)</font>
 
-#### translate3d(tx, ty, tz)
+#### <b>translate3d</b>(tx, ty, tz)
 
 在当前坐标的基础上增加x、y、z三个方向的平移值，[t3](API/Node.md#t3)的缩写
 <h5>Parameters:</h5>
@@ -3262,7 +3266,7 @@ Inherited From:
 See:  
 &emsp;&emsp;<font color=Blue>[t3](API/Node.md#t3)</font>
 
-#### translate3dBy(direction, distance)
+#### <b>translate3dBy</b>(direction, distance)
 
 沿向量平移
 <h5>Parameters:</h5>
@@ -3297,7 +3301,7 @@ See:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#translate3dBy](API/Node.md#translate3dBy)</font>
 
-#### translateBack(distance)
+#### <b>translateBack</b>(distance)
 
 沿向量\[0, 0, -1\]平移
 <h5>Parameters:</h5>
@@ -3325,7 +3329,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#translateBack](API/Node.md#translateBack)</font>
 
-#### translateBottom(distance)
+#### <b>translateBottom</b>(distance)
 
 沿向量\[0, -1, 0\]平移
 <h5>Parameters:</h5>
@@ -3353,7 +3357,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#translateBottom](API/Node.md#translateBottom)</font>
 
-#### translateFront(distance)
+#### <b>translateFront</b>(distance)
 
 沿向量\[0, 0, 1\]平移
 <h5>Parameters:</h5>
@@ -3381,7 +3385,7 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#translateFront](API/Node.md#translateFront)</font>
 
-#### translateLeft(distance)
+#### <b>translateLeft</b>(distance)
 
 沿向量\[-1, 0, 0\]平移
 <h5>Parameters:</h5>
@@ -3409,7 +3413,7 @@ Inherited From:
 Inherited From:    
 &emsp;&emsp;<font color=Blue>[hc.Node#translateLeft](API/Node.md#translateLeft)</font>
 
-#### translateRighc(distance)
+#### <b>translateRighc</b>(distance)
 
 沿向量\[1, 0, 0\]平移
 <h5>Parameters:</h5>
@@ -3437,11 +3441,10 @@ Inherited From:
 Inherited From:  
 &emsp;&emsp;<font color=Blue>[hc.Node#translateRighc](API/Node.md#translateRighc)</font>
 
-#### translateTop(distance)
+#### <b>translateTop</b>(distance)
 
 沿向量\[0, 1, 0\]平移
 
-##### Parameters:
 <h5>Parameters:</h5>
 <div style="width:100%;background-color:#f4f7f8">
     <table>

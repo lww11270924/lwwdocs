@@ -1,14 +1,13 @@
+<h3>hc.widget.AccordionView()</h3>   
 
-[hc](hc.hcml)[.widget](hc.widget.hcml).AccordionView()
-------------------------------------------------------
-
+---
 #### new AccordionView()
 
 折叠组件，用于多组件的折叠展开效果，提供水平和垂直两种布局方式
 
 ### Methods
 
-**add**(title, content, expand, icon)
+#### <b>add</b>(title, content, expand, icon)
 
 添加组件
 
@@ -20,7 +19,7 @@
 `icon`&emsp;&emsp;&emsp;String&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;组件标题中显示的图标     
 
 
-#### addPropertyChangeListener(listener, scope, ahead)
+#### <b>addPropertyChangeListener</b>(listener, scope, ahead)
 
 增加自身属性变化事件监听器
 
@@ -35,7 +34,7 @@ See:
 
 *   [mp](hc.widget.AccordionView.hcml#mp)
 
-#### addToDOM(parentNode)
+#### <b>addToDOM</b>(parentNode)
 
 将组件加入到指定的DOM元素底下，不指定则加入到 document.body 下
 

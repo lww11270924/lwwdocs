@@ -1,7 +1,6 @@
+<h3>hc.Property()</h3>   
 
-[hc](hc.html).Property()
-------------------------
-
+---
 #### new Property()
 
 属性数据，指定PropertyView属性组件要显示的属性
