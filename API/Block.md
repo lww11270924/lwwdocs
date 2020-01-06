@@ -4,10 +4,8 @@
 > <h3>new Block()</h3>
 > 块节点类型，本身不绘制任何内容，用于作为其它的父节点，可以与子节点同步大小，当它隐藏|显示时，所有孩子节点都会跟着隐藏|显示
 ### <font color="#F17DA4">Extends</font>  
----
 &emsp;&emsp;<font color=Blue>[hc.Node](API/Node.md)</font>  
 ### <font color="#F17DA4">Methods</font>  
----
 #### <div style="width:100%;background-color:#f4f7f8"><b>a</b>(name, value) → {Object}<div> 
 获取或设置attr属性，仅有一个参数时相当于[getAttr](API/Data.md#getAttr)，有两个参数时相当于[setAttr](API/Data.md#setattrname-value)
 <h5>Parameters:</h5>
